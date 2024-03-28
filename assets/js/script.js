@@ -52,7 +52,8 @@ function displayQuestion(){
     let operand1 = document.getElementById("operand1");
     let operand2 = document.getElementById("operand2");
     let object1 = randomObject(); //Gets random object
-    operand1.textContent = object1.name; 
+    let multiplier = Multiplier(object1.size);
+    operand1.textContent = multiplier + " " +object1.name; 
     let object2;
     do {
         object2 = randomObject();  //Gets random object
@@ -66,7 +67,7 @@ function displayQuestion(){
  * 
  * Pick a multiplier for the smaller of the 2 objects
  */
-function Multiplier() {
+function Multiplier(size) {
     switch (size) {
         case "tiny":
             return Math.floor(Math.random() * 500) + 1;
