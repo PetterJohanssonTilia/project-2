@@ -51,17 +51,38 @@ document.addEventListener("DOMContentLoaded", function() {
 function displayQuestion(){
     let operand1 = document.getElementById("operand1");
     let operand2 = document.getElementById("operand2");
-    let object1 = randomObject(); //Gets random object
-    let multiplier = Multiplier(object1.size);
-    operand1.textContent = multiplier + " " +object1.name; 
-    let object2;
+    let object1 = randomObject(); //Gets random object1
+    let object2; 
     do {
-        object2 = randomObject();  //Gets random object
-    } while (object2 === object1); //untill it's not the same as first object
-    operand2.textContent = object2.name;
+        object2 = randomObject();  //Gets random object2
+    } while (object2 === object1); //Makes sure it's not the same as object1
+    let lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
+    let multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
+    
+    if (object1 === lowestWeightObject) { //Displays the multiplier with the lowest weight object
+        operand1.textContent = multiplier + " " +object1.name; 
+        operand2.textContent = object2.name;
+    } else if (object2 = lowestWeightObject) { 
+        operand1.textContent = object1.name; 
+        operand2.textContent = multiplier + " " + object2.name;
+    }
+  
     console.log("displayquestion");
+
 }
 
+/**
+ * Checks the lowest weight of object1 and object2
+ * returns the lowestWeightObject
+ */
+function lowestWeight (object1, object2) {
+    if (object1.weight <= object2.weight){ 
+        return object1;
+    } else {
+        return object2;
+    }
+    console.log(lowestWeightObject);
+}
 
 /**
  * 
