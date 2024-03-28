@@ -1,0 +1,32 @@
+/* General style rules */
+body {
+
+}
+
+header {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+#game-section {
+    display: flex;
+    justify-content: center;
+}
+
+.guess-box {
+    background-color: rgb(141, 100, 51);
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+}
+
+#score-section {
+    background-color: rgb(38, 143, 143);
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color: brown
+}
