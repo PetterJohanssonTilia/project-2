@@ -39,8 +39,12 @@ const categories = [animals, foods, culturalObjects, cars];
  * Add Event listeners for clicking guess-boxes
  */
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("operand1").addEventListener("click", function(){}); 
-    document.getElementById("operand2").addEventListener("click", function(){});    
+    document.getElementById("operand1").addEventListener("click", function(){
+        checkAnswer();
+    }); 
+    document.getElementById("operand2").addEventListener("click", function(){
+        checkAnswer();
+    });    
     displayQuestion();
 })
 
@@ -134,4 +138,11 @@ function randomObject(){
     const object = category[Math.floor(Math.random() * categories.length)];
     return object;
 
+}
+
+function checkAnswer(lowestWeightObject, highestWeightObject, multiplier){
+    let lowestWeightObjectWeight = lowestWeightObject.weight * multiplier;
+    console.log(lowestWeightObjectWeight +"lowest");
+    let highestWeightObjectWeight = highestWeightObject.weight
+    console.log(highestWeightObjectWeight +"highest")
 }
