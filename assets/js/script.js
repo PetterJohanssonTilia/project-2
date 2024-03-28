@@ -73,8 +73,21 @@ function displayQuestion(){
         operand2.textContent = multiplier + "X" + object2.name;
     }
     console.log("displayquestion");
+    console.log("highest", highestWeightObject);
 
 }
+
+/** I WANT TO USE ONE FUNCTION INSTEAD OF HIGHESTWEIGHT LOWESTWEIGHT
+function findWeight (object1, object2) {
+    if (object1.weight <= object2.weight){ 
+        object1 = lowestWeightObject;
+        object2 = highestWeightObject;
+    } else {
+        object1 = highestWeightObject;
+        object2 = lowestWeightObject;
+    }
+}
+*/
 
 /**
  * Checks the highest weight of object1 and object2
