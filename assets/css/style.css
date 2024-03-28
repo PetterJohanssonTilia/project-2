@@ -57,5 +57,14 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    margin: 0 6px;
     background-color: aqua;
+    box-shadow: 0 0 0 10px #ce4b4b,
+    0 0 50px #ce4b4b,
+    0 0 90px #ce4b4b;
+    animation: score-star 16s linear infinite;
+}
+@keyframes score-star{
+    0%{ transform: translateY(100vh) scale(0)};
+    100%{ transform: translateY(-5vh) scale(1)};
 }
