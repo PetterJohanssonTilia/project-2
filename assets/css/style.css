@@ -1,3 +1,6 @@
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap'); /* Imbue */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imbue:opsz,wght@10..100,100..900&display=swap'); /*Barlow Condensed*/
 /* General style rules */
 body {
  margin: 0;
@@ -7,8 +10,11 @@ body {
 }
 
 header {
+    font-family: Imbue;
+    font-size: 2rem;
+    color: white;
     text-align: center;
-    background-color: blueviolet;
+    padding-bottom: 20px;
 }
 
 /* ========= Main ========= */
@@ -24,6 +30,9 @@ main {
 }
 
 .guess-box {
+    font-family: Barlow Condensed;
+    color: antiquewhite;
+    font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.219);
     width: 30%;
     height: 50vh;
