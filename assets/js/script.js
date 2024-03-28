@@ -51,25 +51,39 @@ document.addEventListener("DOMContentLoaded", function() {
 function displayQuestion(){
     let operand1 = document.getElementById("operand1");
     let operand2 = document.getElementById("operand2");
-    operand1.textContent = "Gorilla";
-    operand2.textContent = "Pizza";
+    let object1 = randomObject(); //Gets random object
+    operand1.textContent = object1.name; 
+    let object2;
+    do {
+        object2 = randomObject();  //Gets random object
+    } while (object2 === object1); //untill it's not the same as first object
+    operand2.textContent = object2.name;
     console.log("displayquestion");
-    getRandomObjectFromRandomCategory();
 }
 
 
 /**
- * Picks a random category
- * picks a random object inside that category
+ * Creates a random category
+ * makes sure the categories aren't the same
  */
-function getRandomObjectFromRandomCategory(){
-    console.log("getrandomobject1");
-    const category1 = categories[Math.floor(Math.random() * categories.length)]; //random category 1
-    const category2 = categories[Math.floor(Math.random() * categories.length)]; //random category 2
-    const object1 = category1[Math.floor(Math.random() * categories.length)]; //random object 1
-    const object2 = category2[Math.floor(Math.random() * categories.length)]; //random object 2
-    console.log(object1);
-    console.log(object2);
+let previousCategory = -1; //First previousCategory is invalid
+function randomCategory(){
+    let newCategory;
+    do {
+        newCategory = categories[Math.floor(Math.random() * categories.length)]; //Create a new category 
+    } while (newCategory === previousCategory); // untill it's not the same as the previous category
+    previousCategory = newCategory; //update previous category
+    return newCategory;
+}
+
+/**
+ * Creates a random Object from the random category
+ * since the categories can't be the same twice, the objects will never be the same twice
+ */
+function randomObject(){
+    const category = randomCategory();
+    const object = category[Math.floor(Math.random() * categories.length)];
+    return object;
 
 }
 
