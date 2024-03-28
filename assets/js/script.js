@@ -62,7 +62,6 @@ function displayQuestion(){
     do {
         object2 = randomObject();  //Gets random object2
     } while (object2 === object1); //Makes sure it's not the same as object1
-    let highestWeightObject = highestWeight(object1, object2); // Finds the heighest weight object
     let lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
     let multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
     if (object1 === lowestWeightObject) { //Displays the multiplier with the lowest weight object
@@ -73,12 +72,16 @@ function displayQuestion(){
         operand2.textContent = multiplier + "X" + object2.name;
     }
     console.log("displayquestion");
-    console.log("highest", highestWeightObject);
+    console.log("lowest", lowestWeightObject);
 
 }
 
-/** I WANT TO USE ONE FUNCTION INSTEAD OF HIGHESTWEIGHT LOWESTWEIGHT
+/**
+ * 
+ * 
+ 
 function findWeight (object1, object2) {
+    let highestWeightObject, lowestWeightObject; 
     if (object1.weight <= object2.weight){ 
         object1 = lowestWeightObject;
         object2 = highestWeightObject;
@@ -86,20 +89,13 @@ function findWeight (object1, object2) {
         object1 = highestWeightObject;
         object2 = lowestWeightObject;
     }
+
+    return { highestWeightObject, lowestWeightObject };
 }
 */
 
-/**
- * Checks the highest weight of object1 and object2
- * returns the highestWeightObject
- */
-function highestWeight (object1, object2) {
-    if (object1.weight >= object2.weight){ 
-        return object1;
-    } else {
-        return object2;
-    }
-}
+
+
 /**
  * Checks the lowest weight of object1 and object2
  * returns the lowestWeightObject
@@ -153,9 +149,6 @@ function randomObject(){
 
 }
 
-function checkAnswer(lowestWeightObject, highestWeightObject, multiplier){
-    let lowestWeightObjectWeight = lowestWeightObject.weight * multiplier;
-    console.log(lowestWeightObjectWeight +"lowest");
-    let highestWeightObjectWeight = highestWeightObject.weight
-    console.log(highestWeightObjectWeight +"highest")
+function checkAnswer(object1, object2){
+ 
 }

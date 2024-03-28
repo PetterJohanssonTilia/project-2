@@ -31,8 +31,8 @@ main {
 
 .guess-box {
     font-family: Barlow Condensed;
-    color: antiquewhite;
-    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.219);
     width: 30%;
     height: 50vh;
