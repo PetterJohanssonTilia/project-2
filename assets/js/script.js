@@ -44,11 +44,32 @@ document.addEventListener("DOMContentLoaded", function() {
     displayQuestion();
 })
 
+/**
+ * Displays the question in operand1 and operand2
+ * uses getRandomObject function to display random questions
+ */
 function displayQuestion(){
     let operand1 = document.getElementById("operand1");
     let operand2 = document.getElementById("operand2");
     operand1.textContent = "Gorilla";
     operand2.textContent = "Pizza";
+    console.log("displayquestion");
+    getRandomObjectFromRandomCategory();
 }
 
+
+/**
+ * Picks a random category
+ * picks a random object inside that category
+ */
+function getRandomObjectFromRandomCategory(){
+    console.log("getrandomobject1");
+    const category1 = categories[Math.floor(Math.random() * categories.length)]; //random category 1
+    const category2 = categories[Math.floor(Math.random() * categories.length)]; //random category 2
+    const object1 = category1[Math.floor(Math.random() * categories.length)]; //random object 1
+    const object2 = category2[Math.floor(Math.random() * categories.length)]; //random object 2
+    console.log(object1);
+    console.log(object2);
+
+}
 
