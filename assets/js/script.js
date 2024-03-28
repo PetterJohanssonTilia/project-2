@@ -38,9 +38,17 @@ const categories = [animals, foods, culturalObjects, cars];
  * Run game after DOM is loaded
  * Add Event listeners for clicking guess-boxes
  */
-document.addEventListener("DOMcontentLoaded", function(){
-document.getElementById("operand1").addEventListener("click", function(){}) 
-document.getElementById("operand2").addEventListener("click", function(){})    
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("operand1").addEventListener("click", function(){}); 
+    document.getElementById("operand2").addEventListener("click", function(){});    
+    displayQuestion();
 })
+
+function displayQuestion(){
+    let operand1 = document.getElementById("operand1");
+    let operand2 = document.getElementById("operand2");
+    operand1.textContent = "Gorilla";
+    operand2.textContent = "Pizza";
+}
 
 
