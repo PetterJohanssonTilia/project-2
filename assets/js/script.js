@@ -63,6 +63,23 @@ function displayQuestion(){
 
 
 /**
+ * 
+ * Pick a multiplier for the smaller of the 2 objects
+ */
+function Multiplier() {
+    switch (size) {
+        case "tiny":
+            return Math.floor(Math.random() * 500) + 1;
+        case "small":
+            return Math.floor(Math.random() * 500) + 1;
+        case "big":
+            return Math.floor(Math.random() * 1500) + 1;
+        default:
+            return 1; // No multiplier for huge items
+    }
+}
+
+/**
  * Creates a random category
  * makes sure the categories aren't the same
  */
