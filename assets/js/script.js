@@ -40,7 +40,7 @@ const categories = [animals, foods, culturalObjects, cars];
  */
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
-        checkAnswer();
+        calculateCorrectAnswer();
     }); 
     document.getElementById("operand2").addEventListener("click", function(){
         checkAnswer();
@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function displayQuestion(){
     let operand1 = document.getElementById("operand1");
     let operand2 = document.getElementById("operand2");
+    let multiplier1 = document.getElementById("multiplier1");
+    let multiplier2 = document.getElementById("multiplier2");
     let object1 = randomObject(); //Gets random object1
     let object2; 
     do {
@@ -65,32 +67,31 @@ function displayQuestion(){
     let lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
     let multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
     if (object1 === lowestWeightObject) { //Displays the multiplier with the lowest weight object
-        operand1.textContent = multiplier + "X" +object1.name;  
+        operand1.textContent = object1.name;
+        multiplier1.textContent = multiplier;
         operand2.textContent = object2.name;
     } else if (object2 === lowestWeightObject) { 
         operand1.textContent = object1.name; 
-        operand2.textContent = multiplier + "X" + object2.name;
+        operand2.textContent = object2.name;
+        multiplier2.textContent = multiplier;
     }
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
 
 }
 
-/**
- * 
- * 
- 
+
+ /** 
 function findWeight (object1, object2) {
     let highestWeightObject, lowestWeightObject; 
-    if (object1.weight <= object2.weight){ 
-        object1 = lowestWeightObject;
-        object2 = highestWeightObject;
+    if (object1.weight <= object2.weight){
+        object1 = lowestWeightObject, object2 = highestWeightObject;
     } else {
-        object1 = highestWeightObject;
-        object2 = lowestWeightObject;
+        object1 = highestWeightObject, object2 = lowestWeightObject;
     }
 
-    return { highestWeightObject, lowestWeightObject };
+    return highestWeightObject, lowestWeightObject;
+   
 }
 */
 
@@ -149,6 +150,17 @@ function randomObject(){
 
 }
 
-function checkAnswer(object1, object2){
- 
+/** 
+function checkAnswer(){ 
+
 }
+
+function calculateCorrectAnswer(object1, object2){
+    let operand1 = (document.getElementById('operand1').innerText);
+    let operand2 = (document.getElementById('operand2').innerText);
+
+    console.log(operand1);
+    console.log(operand2);
+    console.log(object1.weight);
+    console.log(object2);
+}*/
