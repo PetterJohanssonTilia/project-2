@@ -209,8 +209,8 @@ function incrementScore(){
     document.getElementById("score-section").innerText = ++oldScore;
     multiplier1.textContent = "";
     multiplier2.textContent = "";
-    //unhideRandomScoreStar();
-    displayQuestion();
+    unhideRandomScoreStar();
+   
 }
 /**
  * Gets the current score from the DOM and decrements it by 1
@@ -226,5 +226,6 @@ function decrementScore(){
 function unhideRandomScoreStar() {
     let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
     let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number from number of divs
-    divs[randomIndex].style.opacity = 1; // Changes the CSS style from hidden to block
+    spans[randomIndex].style.opacity = 100; // Changes the CSS style
+    displayQuestion();
 }
