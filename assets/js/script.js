@@ -17,7 +17,7 @@ const foods = [
 ];
 
 const culturalObjects = [
-    { name: "Eiffel Tower", weight: 7300, size: "huge" },
+    { name: "Eiffel Tower", weight: 9162565, size: "huge" },
     { name: "Mona Lisa", weight: 0.8, size: "tiny" },
     { name: "Great Wall of China", weight: 70000000, size: "huge" },
     { name: "Rosetta Stone", weight: 0.762, size: "tiny" },
@@ -41,16 +41,17 @@ const multiplier2 = document.getElementById("multiplier2");
 let object1;
 let object2;
 let lowestWeightObject;
+let selectedAnswer;
 /**
  * Run game after DOM is loaded
  * Add Event listeners for clicking guess-boxes
  */
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
-        checkAnswer1();
+        checkAnswer1(selectedAnswer);
     }); 
     document.getElementById("operand2").addEventListener("click", function(){
-        checkAnswer2();
+        checkAnswer2(selectedAnswer);
     });    
     displayQuestion();
 })
@@ -60,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
  * uses getRandomObject function to display random questions
  */
 function displayQuestion(){
-    let object1 = randomObject(); //Gets random object1
-    let object2; 
+    object1 = randomObject(); //Gets random object1
+    object2; 
     do {
         object2 = randomObject();  //Gets random object2
     } while (object2 === object1); //Makes sure it's not the same as object1
-    let lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
-    let multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
+    lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
+    multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
     if (object1 === lowestWeightObject) { //Displays the multiplier with the lowest weight object
         operand1.textContent = object1.name;
         multiplier1.textContent = multiplier;
@@ -132,6 +133,8 @@ function randomObject(){
 
 /**
 function checkAnswer1(){ 
+    let sum1 = (calculateCorrectAnswer(sum1, sum2))
+
     if (sum1 >= sum2){
         console.log("correct");
     } else {
@@ -139,7 +142,9 @@ function checkAnswer1(){
     }
 
 }
-function checkAnswer2(object2){ 
+function checkAnswer2(){ 
+    let sum2 = (calculateCorrectAnswer(sum1, sum2))
+
     if (sum2 >= sum1){
         console.log("correct");
     } else {
@@ -151,11 +156,48 @@ function calculateCorrectAnswer(){
     let sum1;
     let sum2;
     if (object1 === lowestWeightObject){
-        object1.value * multiplier = sum1
-        object2.value = sum 2
+        sum1 = object1.value * multiplier
+        sum 2 =object2.value
     } else {
-        object1.value = sum1
-        object2.value * multiplier = sum 2
+        sum1 = object1.value 
+        sum 2 = object2.value * multiplier
     }
 }
  */
+
+
+ //------------------   Try 2 ------------------
+ function checkAnswer1(selectedAnswer) {
+    let { sum1, sum2 } = calculateCorrectAnswer();
+
+    if (sum1 >= sum2) {
+        console.log("correct");
+    } else {
+        console.log("incorrect");
+    }
+}
+
+function checkAnswer2(selectedAnswer) {
+    let { sum1, sum2 } = calculateCorrectAnswer();
+
+    if (sum2 >= sum1) {
+        console.log("correct");
+    } else {
+        console.log("incorrect");
+    }
+}
+
+function calculateCorrectAnswer() {
+    console.log("object1:", object1);
+    console.log("object2:", object2);
+    let sum1, sum2;
+    if (object1 === lowestWeightObject) {
+        sum1 = object1.weight * multiplier1.textContent;
+        sum2 = object2.weight;
+    } else {
+        sum1 = object1.weight;
+        sum2 = object2.weight * multiplier2.textContent;
+    }
+    return { sum1: sum1, sum2: sum2 };
+}
+ 
