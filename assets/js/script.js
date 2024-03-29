@@ -33,7 +33,11 @@ const cars = [
 ];
 
 const categories = [animals, foods, culturalObjects, cars];
-
+// ======== Game Windows ======== //
+const operand1 = document.getElementById("operand1");
+const operand2 = document.getElementById("operand2");
+const multiplier1 = document.getElementById("multiplier1");
+const multiplier2 = document.getElementById("multiplier2");
 /**
  * Run game after DOM is loaded
  * Add Event listeners for clicking guess-boxes
@@ -55,10 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
  * uses getRandomObject function to display random questions
  */
 function displayQuestion(){
-    let operand1 = document.getElementById("operand1");
-    let operand2 = document.getElementById("operand2");
-    let multiplier1 = document.getElementById("multiplier1");
-    let multiplier2 = document.getElementById("multiplier2");
     let object1 = randomObject(); //Gets random object1
     let object2; 
     do {
@@ -150,12 +150,15 @@ function randomObject(){
 
 }
 
-/**
+
 function checkAnswer1(){ 
-console.log(object1)
+    let userAnswer = (document.getElementById("operand1").textContent);
+    console.log(userAnswer);
 }
 function checkAnswer2(){ 
-
+    let userAnswer = (document.getElementById("operand2").textContent);
+    console.log(userAnswer);
+ 
 }
 /**
 function calculateCorrectAnswer(object1, object2){
