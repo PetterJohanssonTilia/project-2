@@ -109,4 +109,5 @@ footer {
 /* Used to hide the score-stars */
 .hidden { 
     opacity: 0;
+    transition: 0.5s linear;
 }
