@@ -40,10 +40,10 @@ const categories = [animals, foods, culturalObjects, cars];
  */
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
-        calculateCorrectAnswer();
+        checkAnswer1();
     }); 
     document.getElementById("operand2").addEventListener("click", function(){
-        checkAnswer();
+        checkAnswer2();
     });    
     displayQuestion();
 })
@@ -150,11 +150,14 @@ function randomObject(){
 
 }
 
-/** 
-function checkAnswer(){ 
+/**
+function checkAnswer1(){ 
+console.log(object1)
+}
+function checkAnswer2(){ 
 
 }
-
+/**
 function calculateCorrectAnswer(object1, object2){
     let operand1 = (document.getElementById('operand1').innerText);
     let operand2 = (document.getElementById('operand2').innerText);

@@ -39,6 +39,16 @@ main {
     text-align: center;
 }
 
+.multiplier-box{
+    font-family: Barlow Condensed;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.219);
+    width: auto;
+    height: 50px;
+    text-align: center;
+}
+
 #score-section {
     background-color: rgb(38, 143, 143);
     display: flex;
