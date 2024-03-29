@@ -130,29 +130,32 @@ function randomObject(){
     return object;
 }
 
-function checkAnswer1(lowestWeightObject){ 
-    
-    if (operand1.Content === lowestWeightObject){
+/**
+function checkAnswer1(){ 
+    if (sum1 >= sum2){
         console.log("correct");
     } else {
-        console.log("incorrent");
+        console.log("incorrect");
     }
-   
+
 }
-function checkAnswer2(){ 
-    if (operand2.Content === lowestWeightObject){
+function checkAnswer2(object2){ 
+    if (sum2 >= sum1){
         console.log("correct");
     } else {
-        console.log("incorrent");
+        console.log("incorrect");
     }
 }
 
-function calculateCorrectAnswer(object1, object2){
-    let operand1 = (document.getElementById('operand1').innerText);
-    let operand2 = (document.getElementById('operand2').innerText);
-
-    console.log(operand1);
-    console.log(operand2);
-    console.log(object1.weight);
-    console.log(object2);
+function calculateCorrectAnswer(){
+    let sum1;
+    let sum2;
+    if (object1 === lowestWeightObject){
+        object1.value * multiplier = sum1
+        object2.value = sum 2
+    } else {
+        object1.value = sum1
+        object2.value * multiplier = sum 2
+    }
 }
+ */
