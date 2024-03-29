@@ -33,11 +33,13 @@ const cars = [
 ];
 
 const categories = [animals, foods, culturalObjects, cars];
-// ======== Game Windows ======== //
+// ======== Game Windows and Objects======== //
 const operand1 = document.getElementById("operand1");
 const operand2 = document.getElementById("operand2");
 const multiplier1 = document.getElementById("multiplier1");
 const multiplier2 = document.getElementById("multiplier2");
+let object1;
+let object2;
 /**
  * Run game after DOM is loaded
  * Add Event listeners for clicking guess-boxes
@@ -51,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });    
     displayQuestion();
 })
-
-
 
 /**
  * Displays the question in operand1 and operand2
@@ -70,33 +70,17 @@ function displayQuestion(){
         operand1.textContent = object1.name;
         multiplier1.textContent = multiplier;
         operand2.textContent = object2.name;
+        //return (object1, object2);
     } else if (object2 === lowestWeightObject) { 
         operand1.textContent = object1.name; 
         operand2.textContent = object2.name;
         multiplier2.textContent = multiplier;
+        //return (object1, object2);
     }
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
 
 }
-
-
- /** 
-function findWeight (object1, object2) {
-    let highestWeightObject, lowestWeightObject; 
-    if (object1.weight <= object2.weight){
-        object1 = lowestWeightObject, object2 = highestWeightObject;
-    } else {
-        object1 = highestWeightObject, object2 = lowestWeightObject;
-    }
-
-    return highestWeightObject, lowestWeightObject;
-   
-}
-*/
-
-
-
 /**
  * Checks the lowest weight of object1 and object2
  * returns the lowestWeightObject
@@ -124,7 +108,6 @@ function Multiplier(size) {
             return 1; // No multiplier for huge items
     }
 }
-
 /**
  * Creates a random category
  * makes sure the categories aren't the same
@@ -138,7 +121,6 @@ function randomCategory(){
     previousCategory = newCategory; //update previous category
     return newCategory;
 }
-
 /**
  * Creates a random Object from the random category
  * since the categories can't be the same twice, the objects will never be the same twice
@@ -147,20 +129,18 @@ function randomObject(){
     const category = randomCategory();
     const object = category[Math.floor(Math.random() * categories.length)];
     return object;
-
 }
 
-
-function checkAnswer1(){ 
-    let userAnswer = (document.getElementById("operand1").textContent);
+function checkAnswer1(object1, object2){ 
+    let userAnswer = object1.weight;
     console.log(userAnswer);
 }
 function checkAnswer2(){ 
-    let userAnswer = (document.getElementById("operand2").textContent);
+    let userAnswer = operand2.textContent;
     console.log(userAnswer);
  
 }
-/**
+
 function calculateCorrectAnswer(object1, object2){
     let operand1 = (document.getElementById('operand1').innerText);
     let operand2 = (document.getElementById('operand2').innerText);
@@ -169,4 +149,4 @@ function calculateCorrectAnswer(object1, object2){
     console.log(operand2);
     console.log(object1.weight);
     console.log(object2);
-}*/
+}
