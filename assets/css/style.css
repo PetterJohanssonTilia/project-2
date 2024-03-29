@@ -37,6 +37,7 @@ main {
     width: 30%;
     height: 50vh;
     text-align: center;
+    z-index: 1;
 }
 
 .multiplier-box{
@@ -47,6 +48,7 @@ main {
     width: auto;
     height: 50px;
     text-align: center;
+    z-index: 2;
 }
 
 #score-section {

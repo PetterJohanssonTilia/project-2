@@ -220,12 +220,19 @@ function decrementScore(){
     document.getElementById("score-section").innerText = --oldScore;
     multiplier1.textContent = "";
     multiplier2.textContent = "";
-    displayQuestion();
+    hideRandomScoreStar()
 }
 
 function unhideRandomScoreStar() {
     let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
     let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number from number of divs
     spans[randomIndex].style.opacity = 100; // Changes the CSS style
+    displayQuestion();
+}
+
+function hideRandomScoreStar() {
+    let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
+    let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number from number of divs
+    spans[randomIndex].style.opacity = 0; // Changes the CSS style
     displayQuestion();
 }
