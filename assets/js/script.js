@@ -171,9 +171,9 @@ function calculateCorrectAnswer(){
     let { sum1, sum2 } = calculateCorrectAnswer();
 
     if (sum1 >= sum2) {
-        console.log("correct");
+        incrementScore();
     } else {
-        console.log("incorrect");
+        decrementScore();
     }
 }
 
@@ -181,9 +181,9 @@ function checkAnswer2(selectedAnswer) {
     let { sum1, sum2 } = calculateCorrectAnswer();
 
     if (sum2 >= sum1) {
-        console.log("correct");
+        incrementScore();
     } else {
-        console.log("incorrect");
+        decrementScore();
     }
 }
 
@@ -201,3 +201,23 @@ function calculateCorrectAnswer() {
     return { sum1: sum1, sum2: sum2 };
 }
  
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementScore(){
+    let oldScore = parseInt(document.getElementById("score-section").innerText);
+    document.getElementById("score-section").innerText = ++oldScore;
+    multiplier1.textContent = "";
+    multiplier2.textContent = "";
+    displayQuestion();
+}
+/**
+ * Gets the current score from the DOM and decrements it by 1
+ */
+function decrementScore(){
+    let oldScore = parseInt(document.getElementById("score-section").innerText);
+    document.getElementById("score-section").innerText = --oldScore;
+    multiplier1.textContent = "";
+    multiplier2.textContent = "";
+    displayQuestion();
+}
