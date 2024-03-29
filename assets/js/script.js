@@ -40,6 +40,7 @@ const multiplier1 = document.getElementById("multiplier1");
 const multiplier2 = document.getElementById("multiplier2");
 let object1;
 let object2;
+let lowestWeightObject;
 /**
  * Run game after DOM is loaded
  * Add Event listeners for clicking guess-boxes
@@ -70,12 +71,10 @@ function displayQuestion(){
         operand1.textContent = object1.name;
         multiplier1.textContent = multiplier;
         operand2.textContent = object2.name;
-        //return (object1, object2);
     } else if (object2 === lowestWeightObject) { 
         operand1.textContent = object1.name; 
         operand2.textContent = object2.name;
         multiplier2.textContent = multiplier;
-        //return (object1, object2);
     }
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
@@ -131,14 +130,21 @@ function randomObject(){
     return object;
 }
 
-function checkAnswer1(object1, object2){ 
-    let userAnswer = object1.weight;
-    console.log(userAnswer);
+function checkAnswer1(lowestWeightObject){ 
+    
+    if (operand1.Content === lowestWeightObject){
+        console.log("correct");
+    } else {
+        console.log("incorrent");
+    }
+   
 }
 function checkAnswer2(){ 
-    let userAnswer = operand2.textContent;
-    console.log(userAnswer);
- 
+    if (operand2.Content === lowestWeightObject){
+        console.log("correct");
+    } else {
+        console.log("incorrent");
+    }
 }
 
 function calculateCorrectAnswer(object1, object2){
