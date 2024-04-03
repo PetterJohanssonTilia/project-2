@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
  * uses getRandomObject function to display random questions
  */
 function displayQuestion(){
+    let plural1 = ""; //variable to display "s" at the end of object name
+    let plural2 = "";
     object1 = randomObject(); //Gets random object1
     object2; 
     do {
@@ -73,15 +75,18 @@ function displayQuestion(){
     } while (object2 === object1); //Makes sure it's not the same as object1
     lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
     multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
-    if (object1 === lowestWeightObject) { //Displays the multiplier with the lowest weight object
-        multiplier1.textContent = multiplier;
+    if (object1 === lowestWeightObject) { 
+        multiplier1.textContent = multiplier; //Displays the multiplier with the lowest weight object
+        plural1 = "s"; //Displays the "S" with the multiple object
+
     } else if (object2 === lowestWeightObject) { 
-        multiplier2.textContent = multiplier; 
+        multiplier2.textContent = multiplier;  //Displays the multiplier with the lowest weight object
+        plural2 = "s"; //Displays the "S" with the multiple object
     }
     displayImage1(object1); //Displays the objects images
     displayImage2(object2);
-    operand1.textContent = object1.name; //Displays the objects names
-    operand2.textContent = object2.name;
+    operand1.textContent = multiplier1.textContent + " " + object1.name + plural1; //Displays the objects names
+    operand2.textContent = multiplier2.textContent + " " + object2.name + plural2;
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
 }
