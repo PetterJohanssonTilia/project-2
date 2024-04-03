@@ -1,11 +1,11 @@
 // ======== Game objects ======== //
 
 const animals = [
-    { name: "Elephant", weight: 5000, size: "big" },
-    { name: "Giraffe", weight: 1800, size: "big" },
-    { name: "Lion", weight: 190, size: "small" },
-    { name: "Tiger", weight: 250, size: "small", image: "./images/tiger.png" },
-    { name: "Gorilla", weight: 180, size: "small" }
+    { name: "Elephant", weight: 5000, size: "big", image: "assets/images/tiger.png" },
+    { name: "Giraffe", weight: 1800, size: "big", image: "assets/images/tiger.png" },
+    { name: "Lion", weight: 190, size: "small", image: "assets/images/tiger.png" },
+    { name: "Tiger", weight: 250, size: "small", image: "assets/images/tiger.png" },
+    { name: "Gorilla", weight: 180, size: "small", image: "assets/images/tiger.png" }
 ];
 
 const foods = [
@@ -38,6 +38,8 @@ const operand1 = document.getElementById("operand1");
 const operand2 = document.getElementById("operand2");
 const multiplier1 = document.getElementById("multiplier1");
 const multiplier2 = document.getElementById("multiplier2");
+const object1Image = document.getElementById("object-image1");
+const object2Image = document.getElementById("object-image2");
 let object1;
 let object2;
 let lowestWeightObject;
@@ -76,10 +78,9 @@ function displayQuestion(){
     } else if (object2 === lowestWeightObject) { 
         multiplier2.textContent = multiplier; 
     }
-    displayImage1(object1);
+    displayImage1(object1); //Displays the objects images
     displayImage2(object2);
-
-    operand1.textContent = object1.name;
+    operand1.textContent = object1.name; //Displays the objects names
     operand2.textContent = object2.name;
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
@@ -136,10 +137,11 @@ function randomObject(){
 }
 
 function displayImage1(object1) {
+    object1Image.innerHTML = `<img src="${object1.image}" alt="${object1.name}" width="100%" height="100%">`;
 }
 
-function displayImage2(){
-
+function displayImage2(object2) {
+    object2Image.innerHTML = `<img src="${object2.image}" alt="${object2.name}" width="100%" height="100%">`;
 }
 /**
 function checkAnswer1(){ 
