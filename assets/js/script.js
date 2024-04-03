@@ -44,15 +44,20 @@ let lowestWeightObject;
 let selectedAnswer;
 /**
  * Run game after DOM is loaded
- * Add Event listeners for clicking guess-boxes
+ * Add Event listeners after DOM is loaded
  */
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
-        checkAnswer1(selectedAnswer);
+        checkAnswer1(selectedAnswer); //Click on guess-box1
     }); 
     document.getElementById("operand2").addEventListener("click", function(){
-        checkAnswer2(selectedAnswer);
-    });    
+        checkAnswer2(selectedAnswer); //Click on guess-box2
+    });
+  
+
+
+
+
     displayQuestion();
 })
 
@@ -225,14 +230,16 @@ function decrementScore(){
 
 function unhideRandomScoreStar() {
     let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
-    let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number from number of divs
-    spans[randomIndex].style.opacity = 100; // Changes the CSS style
+    let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
+    spans[randomIndex].classList.remove("hidden"); // Removes the hidden class
+    spans[randomIndex].classList.add("shown"); // Adds shown class
     displayQuestion();
 }
 
 function hideRandomScoreStar() {
-    let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
-    let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number from number of divs
-    spans[randomIndex].style.opacity = 0; // Changes the CSS style
+    let spans = document.querySelectorAll(".shown"); // Selects all spans with the shown class
+    let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number of all the shown spans
+    spans[randomIndex].classList.remove("shown"); // Removes the shown class
+    spans[randomIndex].classList.add("hidden"); // Adds the hidden class
     displayQuestion();
 }

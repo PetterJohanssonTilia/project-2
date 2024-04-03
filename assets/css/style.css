@@ -54,7 +54,7 @@ main {
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.219);
     text-align: center;
-    z-index: 1;
+    z-index: 10;
 }
 /* Multiplier inside the guess boxes */
 .multiplier-box1, .multiplier-box2{
@@ -62,7 +62,7 @@ main {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     text-align: center;
-    z-index: 2;
+    z-index: 9;
     padding-top: 0%;
     padding-bottom: 100%;
     text-shadow: 1px 1px 7px rgb(0, 0, 0);
@@ -112,10 +112,7 @@ footer {
     0 0 90px #9adfdf;
 }
 
-.score-star img{
-   margin: -40px;
 
-}
 @keyframes score-star{
     0%{ transform: translateX(0vw) translateY(100vh) scale(0)};
     12.5%{ transform: translateX(2vw) translateY(87.5vh) scale(0.125)}
@@ -134,5 +131,10 @@ footer {
 /* Used to hide the score-stars */
 .hidden { 
     opacity: 0;
+    transition: 0.5s linear;
+}
+
+.shown {
+    opacity: 100;
     transition: 0.5s linear;
 }
