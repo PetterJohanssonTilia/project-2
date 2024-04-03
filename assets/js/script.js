@@ -42,6 +42,7 @@ let object1;
 let object2;
 let lowestWeightObject;
 let selectedAnswer;
+
 /**
  * Run game after DOM is loaded
  * Add Event listeners after DOM is loaded
@@ -53,15 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand2").addEventListener("click", function(){
         checkAnswer2(selectedAnswer); //Click on guess-box2
     });
-
-    let spans = document.getElementsByTagName("span");
-    for (let span of spans) {
-        span.addEventListener("click", function(){
-            console.log("hello");
-        });
-    }
     displayQuestion();
 });
+
+
 
 /**
  * Displays the question in operand1 and operand2
@@ -235,7 +231,10 @@ function unhideRandomScoreStar() {
     let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
     spans[randomIndex].classList.remove("hidden"); // Removes the hidden class
     spans[randomIndex].classList.add("shown"); // Adds shown class
-
+    spans[randomIndex].addEventListener("click", function() {
+        console.log("hello");
+    });
+  
     displayQuestion();
 }
 
