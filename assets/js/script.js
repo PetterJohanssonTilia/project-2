@@ -38,7 +38,6 @@ const operand1 = document.getElementById("operand1");
 const operand2 = document.getElementById("operand2");
 const multiplier1 = document.getElementById("multiplier1");
 const multiplier2 = document.getElementById("multiplier2");
-const shownScoreStars = document.getElementsByClassName("shown");
 let object1;
 let object2;
 let lowestWeightObject;
@@ -54,17 +53,15 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand2").addEventListener("click", function(){
         checkAnswer2(selectedAnswer); //Click on guess-box2
     });
-    for (let shownScoreStar of shownScoreStars) {
-        shownScoreStar.addEventListener("click", function() {
-            console.log('Clicked on a shown score star');
+
+    let spans = document.getElementsByTagName("span");
+    for (let span of spans) {
+        span.addEventListener("click", function(){
+            console.log("hello");
         });
     }
-
-
-
-
     displayQuestion();
-})
+});
 
 /**
  * Displays the question in operand1 and operand2
@@ -137,7 +134,7 @@ function randomCategory(){
  */
 function randomObject(){
     const category = randomCategory();
-    const object = category[Math.floor(Math.random() * categories.length)];
+    const object = category[Math.floor(Math.random() * category.length)];
     return object;
 }
 
@@ -238,6 +235,7 @@ function unhideRandomScoreStar() {
     let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
     spans[randomIndex].classList.remove("hidden"); // Removes the hidden class
     spans[randomIndex].classList.add("shown"); // Adds shown class
+
     displayQuestion();
 }
 

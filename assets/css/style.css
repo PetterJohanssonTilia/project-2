@@ -105,6 +105,7 @@ footer {
     animation: score-star 16s linear infinite;
     animation-duration: calc(200s / var(--duration)); /* Changes the animation duration depending on the --duration variable*/
 }
+
 .score-star span:nth-child(even){ /* Different color for even spans */
     background-color: #37B5B6;
     box-shadow: 0 0 0 10px #37B5B6,
