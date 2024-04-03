@@ -76,12 +76,15 @@ function displayQuestion(){
     } else if (object2 === lowestWeightObject) { 
         multiplier2.textContent = multiplier; 
     }
+    displayImage1(object1);
+    displayImage2(object2);
+
     operand1.textContent = object1.name;
     operand2.textContent = object2.name;
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
-
 }
+
 /**
  * Checks the lowest weight of object1 and object2
  * returns the lowestWeightObject
@@ -132,6 +135,13 @@ function randomObject(){
     return object;
 }
 
+function displayImage1(){
+
+}
+
+function displayImage2(){
+
+}
 /**
 function checkAnswer1(){ 
     let sum1 = (calculateCorrectAnswer(sum1, sum2))
