@@ -1,35 +1,35 @@
 // ======== Game objects ======== //
 
 const animals = [
-    { name: "Elephant", weight: 5000, size: "big", image: "assets/images/tiger.png" },
-    { name: "Giraffe", weight: 1800, size: "big", image: "assets/images/tiger.png" },
-    { name: "Lion", weight: 190, size: "small", image: "assets/images/tiger.png" },
+    { name: "Elephant", weight: 5000, size: "big", image: "assets/images/elephant.png" },
+    { name: "Giraffe", weight: 1800, size: "big", image: "assets/images/giraffe.png" },
+    { name: "Lion", weight: 190, size: "small", image: "assets/images/lion.png" },
     { name: "Tiger", weight: 250, size: "small", image: "assets/images/tiger.png" },
-    { name: "Gorilla", weight: 180, size: "small", image: "assets/images/tiger.png" }
+    { name: "Gorilla", weight: 180, size: "small", image: "assets/images/gorilla.png" }
 ];
 
 const foods = [
-    { name: "Apple", weight: 0.15, size: "tiny" },
-    { name: "Chicken Breast", weight: 0.2, size: "tiny" },
-    { name: "Broccoli", weight: 0.1, size: "tiny" },
-    { name: "Salmon Fillet", weight: 0.18, size: "tiny" },
-    { name: "Pizza", weight: 0.3, size: "tiny" }
+    { name: "Apple", weight: 0.15, size: "tiny", image: "assets/images/apple.png" },
+    { name: "Chicken Breast", weight: 0.2, size: "tiny", image: "assets/images/chickenbreast.png" },
+    { name: "Broccoli", weight: 0.1, size: "tiny", image: "assets/images/broccoli.png" },
+    { name: "Salmon Fillet", weight: 0.18, size: "tiny", image: "assets/images/salmonfillet.png" },
+    { name: "Pizza", weight: 0.3, size: "tiny", image: "assets/images/pizza.png" }
 ];
 
 const culturalObjects = [
-    { name: "Eiffel Tower", weight: 9162565, size: "huge" },
-    { name: "Mona Lisa", weight: 0.8, size: "tiny" },
-    { name: "Great Wall of China", weight: 70000000, size: "huge" },
-    { name: "Rosetta Stone", weight: 0.762, size: "tiny" },
-    { name: "Taj Mahal", weight: 16340000, size: "huge" }
+    { name: "Eiffel Tower", weight: 9162565, size: "huge", image: "assets/images/eiffeltower.png" },
+    { name: "Mona Lisa", weight: 0.8, size: "tiny", image: "assets/images/monalisa.png" },
+    { name: "Great Wall of China", weight: 70000000, size: "huge", image: "assets/images/greatwallofchina.png" },
+    { name: "Rosetta Stone", weight: 0.762, size: "tiny", image: "assets/images/rosettastone.png" },
+    { name: "Taj Mahal", weight: 16340000, size: "huge", image: "assets/images/tajmahal.png" }
 ];
 
 const cars = [
-    { name: "Fiat 500", weight: 900, size: "big" },
-    { name: "Hummer H1", weight: 3900, size: "big" },
-    { name: "Smart Fortwo", weight: 750, size: "big" },
-    { name: "Ford F-150", weight: 2300, size: "big" },
-    { name: "Bugatti Chiron", weight: 1995, size: "big" }
+    { name: "Fiat 500", weight: 900, size: "big", image: "assets/images/fiat500.png" },
+    { name: "Hummer H1", weight: 3900, size: "big", image: "assets/images/hummerh1.png" },
+    { name: "Smart Fortwo", weight: 750, size: "big", image: "assets/images/smartfortwo.png" },
+    { name: "Ford F-150", weight: 2300, size: "big", image: "assets/images/fordf150.png" },
+    { name: "Bugatti Chiron", weight: 1995, size: "big", image: "assets/images/bugattichiron.png" }
 ];
 
 const categories = [animals, foods, culturalObjects, cars];
