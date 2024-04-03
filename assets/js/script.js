@@ -4,7 +4,7 @@ const animals = [
     { name: "Elephant", weight: 5000, size: "big" },
     { name: "Giraffe", weight: 1800, size: "big" },
     { name: "Lion", weight: 190, size: "small" },
-    { name: "Tiger", weight: 250, size: "small" },
+    { name: "Tiger", weight: 250, size: "small", image: "./images/tiger.png" },
     { name: "Gorilla", weight: 180, size: "small" }
 ];
 
@@ -72,14 +72,12 @@ function displayQuestion(){
     lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
     multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
     if (object1 === lowestWeightObject) { //Displays the multiplier with the lowest weight object
-        operand1.textContent = object1.name;
         multiplier1.textContent = multiplier;
-        operand2.textContent = object2.name;
     } else if (object2 === lowestWeightObject) { 
-        operand1.textContent = object1.name; 
-        operand2.textContent = object2.name;
-        multiplier2.textContent = multiplier;
+        multiplier2.textContent = multiplier; 
     }
+    operand1.textContent = object1.name;
+    operand2.textContent = object2.name;
     console.log("displayquestion");
     console.log("lowest", lowestWeightObject);
 
