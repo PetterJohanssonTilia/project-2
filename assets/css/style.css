@@ -38,11 +38,14 @@ main {
 .multiplier-box2 { grid-area: 4 / 5 / 5 / 6; }
 .score-box { grid-area: 5 / 3 / 6 / 5; }
 
+
 .WhatWeighsMore h1{
     font-family: Imbue;
     color: white;
     font-size: 2rem;
     text-align: center;
+    padding: 50px;
+
 }
 /* Left and right guess box */
 .guess-box1, .guess-box2{
@@ -76,6 +79,7 @@ footer {
 
 #score-star-container {
     position: absolute;
+    top: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
