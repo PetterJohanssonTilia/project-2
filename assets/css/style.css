@@ -97,14 +97,11 @@ footer {
 }
 .score-star span {
     position: relative;
-    width: 20px;
-    height: 20px;
     border-radius: 50%;
-    margin: 0 6px;
-    background-color: #F2F597;
-    box-shadow: 0 0 0 10px #f2f59a,
-    0 0 50px #f4f79f,
-    0 0 90px #f6f8b0;
+    background-color: #f2f597c4;
+    box-shadow: 0 0 0 10px #f2f59a89,
+    0 0 50px #f4f79f3e,
+    0 0 90px #f6f8b01b;
     animation: score-star 16s linear infinite;
     animation-duration: calc(200s / var(--duration)); /* Changes the animation duration depending on the --duration variable*/
 }
@@ -113,6 +110,11 @@ footer {
     box-shadow: 0 0 0 10px #37B5B6,
     0 0 50px #6acfcfda,
     0 0 90px #9adfdf;
+}
+
+.score-star img{
+   margin: -40px;
+
 }
 @keyframes score-star{
     0%{ transform: translateX(0vw) translateY(100vh) scale(0)};
