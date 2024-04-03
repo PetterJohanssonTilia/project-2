@@ -135,8 +135,7 @@ function randomObject(){
     return object;
 }
 
-function displayImage1(){
-
+function displayImage1(object1) {
 }
 
 function displayImage2(){

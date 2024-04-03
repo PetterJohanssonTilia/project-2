@@ -37,6 +37,8 @@ main {
 .multiplier-box1 { grid-area: 4 / 2 / 5 / 3; }
 .multiplier-box2 { grid-area: 4 / 5 / 5 / 6; }
 .score-box { grid-area: 5 / 3 / 6 / 5; }
+.object-image1 { grid-area: 3 / 2 / 4 / 3; }
+.object-image2 { grid-area: 3 / 5 / 4 / 6; }
 
 
 .WhatWeighsMore h1{
@@ -76,7 +78,12 @@ main {
     font-size: 2rem;
 
 }
-
+.object-image1 {
+background: red;
+}
+.object-image2 {
+    background: blue;
+    }
 footer {
     text-align: center;
     background-color: brown
