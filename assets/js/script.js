@@ -38,6 +38,7 @@ const operand1 = document.getElementById("operand1");
 const operand2 = document.getElementById("operand2");
 const multiplier1 = document.getElementById("multiplier1");
 const multiplier2 = document.getElementById("multiplier2");
+const shownScoreStars = document.getElementsByClassName("shown");
 let object1;
 let object2;
 let lowestWeightObject;
@@ -53,7 +54,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand2").addEventListener("click", function(){
         checkAnswer2(selectedAnswer); //Click on guess-box2
     });
-  
+    for (let shownScoreStar of shownScoreStars) {
+        shownScoreStar.addEventListener("click", function() {
+            console.log('Clicked on a shown score star');
+        });
+    }
 
 
 
