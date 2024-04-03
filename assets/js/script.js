@@ -20,7 +20,7 @@ const culturalObjects = [
     { name: "Eiffel Tower", weight: 9162565, size: "huge", image: "assets/images/eiffeltower.png" },
     { name: "Mona Lisa", weight: 0.8, size: "tiny", image: "assets/images/monalisa.png" },
     { name: "Great Wall of China", weight: 70000000, size: "huge", image: "assets/images/greatwallofchina.png" },
-    { name: "Rosetta Stone", weight: 0.762, size: "tiny", image: "assets/images/rosettastone.png" },
+    { name: "Rosetta Stone", weight: 762, size: "tiny", image: "assets/images/rosettastone.png" },
     { name: "Taj Mahal", weight: 16340000, size: "huge", image: "assets/images/tajmahal.png" }
 ];
 
