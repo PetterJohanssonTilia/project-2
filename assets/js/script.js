@@ -62,6 +62,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("object-image2").addEventListener("click", function(){
         checkAnswer2(selectedAnswer); //Click on image 2
     });
+    document.getElementById("score-star").addEventListener("click", function(bubblepop){ //parent div of all the score-stars
+        if (bubblepop.target.classList.contains("shown")){ //checks for Shown score-stars
+            console.log("clicking on shown");
+        } else {
+            console.log("clicking on nothing");
+        }
+        });
     displayQuestion();
 });
 
@@ -251,9 +258,7 @@ function unhideRandomScoreStar() {
     let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
     spans[randomIndex].classList.remove("hidden"); // Removes the hidden class
     spans[randomIndex].classList.add("shown"); // Adds shown class
-    spans[randomIndex].addEventListener("click", function() {
-        console.log("hello");
-    });
+   
   
     displayQuestion();
 }
