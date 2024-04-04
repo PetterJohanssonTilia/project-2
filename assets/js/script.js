@@ -52,9 +52,15 @@ let selectedAnswer;
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
         checkAnswer1(selectedAnswer); //Click on guess-box1
-    }); 
+    });
+    document.getElementById("object-image1").addEventListener("click", function(){
+        checkAnswer1(selectedAnswer); //Click on image 1
+    });  
     document.getElementById("operand2").addEventListener("click", function(){
         checkAnswer2(selectedAnswer); //Click on guess-box2
+    });
+    document.getElementById("object-image2").addEventListener("click", function(){
+        checkAnswer2(selectedAnswer); //Click on image 2
     });
     displayQuestion();
 });
