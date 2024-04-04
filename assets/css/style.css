@@ -88,13 +88,17 @@ footer {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    z-index: -99;
+    z-index: 1;
 }
 .score-star {
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    z-index: 2;
 }
+
+
+
 .score-star span {
     position: relative;
     border-radius: 50%;
@@ -138,4 +142,5 @@ footer {
 .shown {
     opacity: 100;
     transition: 0.5s linear;
+    z-index: 3;
 }
