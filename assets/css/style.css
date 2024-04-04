@@ -56,7 +56,10 @@ main {
     text-align: center;
     z-index: 10;
 }
-
+/* Multiplier boxes */
+.multiplier-box {
+    color: #0a1d5600;
+}
 /* Score under guess boxes */
 .score-box {
     background-color: rgb(0, 0, 0, 0.827);

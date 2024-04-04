@@ -89,11 +89,11 @@ function displayQuestion(){
     lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
     multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
     if (object1 === lowestWeightObject) { 
-        multiplier1.textContent = multiplier; //Displays the multiplier with the lowest weight object
+        multiplier1.textContent = multiplier; //Storess the multiplier with the lowest weight object
         plural1 = "s"; //Displays the "S" with the multiple object
 
     } else if (object2 === lowestWeightObject) { 
-        multiplier2.textContent = multiplier;  //Displays the multiplier with the lowest weight object
+        multiplier2.textContent = multiplier;  //stores the multiplier with the lowest weight object
         plural2 = "s"; //Displays the "S" with the multiple object
     }
     displayImage1(object1); //Displays the objects images
