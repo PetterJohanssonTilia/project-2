@@ -133,6 +133,9 @@ footer {
     z-index: 2;
 }
 
+.score-star img{
+    opacity: 50%;
+}
 
 .score-star span {
     position: relative;
