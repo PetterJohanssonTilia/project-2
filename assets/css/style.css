@@ -76,8 +76,29 @@ main {
     color:white;
     font-size: 2rem;
     z-index: 10;
-
+    
 }
+.score-box-animation {
+    animation: score-box 1s linear;
+}
+@keyframes score-box{
+    0%{ transform: translateY(0px) scale(1);}
+    40%{ transform: translateY(0px) scale(1);}
+    50%{ transform: translateY(-50px) scale(1);}
+    60%{ transform: translateY(-65px) scale(1.4);}
+    65%{ transform: translateY(-50px) scale(1);}
+    90%{ transform: translateY(10px) scale(0.9);}
+    100%{ transform: translateY(0px) scale(1);}
+}
+
+.score-box-correct {
+    color: green;
+}
+
+.score-box-incorrect {
+    color: red;
+}
+
 .object-image1 {
 height: 20vh;
 z-index: 11;
