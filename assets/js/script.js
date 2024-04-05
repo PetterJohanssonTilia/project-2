@@ -239,6 +239,7 @@ function incrementScore(){
     document.getElementById("score-section").innerText = ++oldScore;
     multiplier1.textContent = "";
     multiplier2.textContent = "";
+    scoreboxCorrect();
     unhideRandomScoreStar();
    
 }
@@ -250,9 +251,23 @@ function decrementScore(){
     document.getElementById("score-section").innerText = --oldScore;
     multiplier1.textContent = "";
     multiplier2.textContent = "";
-    hideRandomScoreStar()
+    scoreboxIncorrect();
+    hideRandomScoreStar();
 }
-
+function scoreboxCorrect(){
+    let scorebox = document.getElementById("score-section");
+    scorebox.classList.add("score-box-correct");
+    setTimeout(() => {
+        scorebox.classList.remove("score-box-correct");
+    }, 300);
+}
+function scoreboxIncorrect(){
+    let scorebox = document.getElementById("score-section");
+    scorebox.classList.add("score-box-incorrect");
+    setTimeout(() => {
+        scorebox.classList.remove("score-box-incorrect");
+    }, 300);
+}
 function unhideRandomScoreStar() {
     let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
     let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
