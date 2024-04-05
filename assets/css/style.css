@@ -23,8 +23,6 @@ main {
 
 /* Game container grid */
 .game-container {
-    width: 80vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
