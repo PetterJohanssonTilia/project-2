@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         checkAnswer2(selectedAnswer); //Click on image 2
     });
     document.getElementById("score-star").addEventListener("click", function(){ //parent div of all the score-stars
-        if (this.classList.contains("shown")){ //checks for Shown score-stars
+        if (this.classList.contains("shown")){ //checks for .shown score-stars
             console.log("clicking on shown");
         } else {
             console.log("clicking on nothing");

@@ -93,28 +93,28 @@ footer {
 .score-star {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     z-index: 2;
 }
 
 
-
 .score-star span {
     position: relative;
     border-radius: 50%;
-    background-color: #f2f597c4;
-    box-shadow: 0 0 0 10px #f2f59a89,
-    0 0 50px #f4f79f3e,
-    0 0 90px #f6f8b01b;
+    background-color: #f0f56c11;
+    box-shadow: 0 0 0 10px #f0f48800,
+    0 0 50px #f6f99911,
+    0 0 90px #f6f9b111;
     animation: score-star 16s linear infinite;
     animation-duration: calc(200s / var(--duration)); /* Changes the animation duration depending on the --duration variable*/
 }
 
 .score-star span:nth-child(even){ /* Different color for even spans */
-    background-color: #37B5B6;
-    box-shadow: 0 0 0 10px #37B5B6,
-    0 0 50px #6acfcfda,
-    0 0 90px #9adfdf;
+    background-color: #37b6b626;
+    box-shadow: 0 0 0 10px #37b6b615,
+    0 0 50px #6acfcf11,
+    0 0 90px #9adfdf11;
 }
 
 
