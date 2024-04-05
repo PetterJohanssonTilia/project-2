@@ -23,6 +23,8 @@ main {
 
 /* Game container grid */
 .game-container {
+    width: 80vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -103,11 +105,17 @@ main {
 }
 
 .object-image1 {
-height: 20vh;
-z-index: 11;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 11;
 }
 .object-image2 {
-    height: 20vh;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     z-index: 11;
     }
 footer {
