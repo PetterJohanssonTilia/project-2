@@ -40,6 +40,7 @@ const multiplier1 = document.getElementById("multiplier1");
 const multiplier2 = document.getElementById("multiplier2");
 const object1Image = document.getElementById("object-image1");
 const object2Image = document.getElementById("object-image2");
+const bubbles = document.querySelectorAll('.bubble');
 let object1;
 let object2;
 let lowestWeightObject;
@@ -62,13 +63,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("object-image2").addEventListener("click", function(){
         checkAnswer2(selectedAnswer); //Click on image 2
     });
-    document.getElementById("score-star").addEventListener("click", function(){ //parent div of all the score-stars
-        if (this.classList.contains("shown")){ //checks for .shown score-stars
-            console.log("clicking on shown");
-        } else {
-            console.log("clicking on nothing");
-        }
+    bubbles.forEach(ele => {
+        ele.addEventListener("click", function(e) {
+            if (e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('bubble')) {
+                console.log('Clicked on image inside bubble');
+            }
         });
+    });
     displayQuestion();
 });
 
