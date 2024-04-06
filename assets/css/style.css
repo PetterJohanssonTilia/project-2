@@ -177,10 +177,24 @@ footer {
 
 }
 
+
 /* Used to hide the score-stars */
 .hidden { 
     opacity: 0;
-    transition: 0.5s linear;
+    transition: 0.1s linear;
+    animation: bubble-pop 0.1s linear !important;
+}
+
+@keyframes bubble-pop {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .shown {

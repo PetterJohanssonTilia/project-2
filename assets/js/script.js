@@ -288,7 +288,8 @@ function hideRandomScoreStar() {
 function hideThisScoreStar(element){
     console.log("Click");
     element.parentElement.classList.remove("shown"); // Removes the shown class
-    console.log("add shown");
-    element.parentElement.classList.add("hidden"); // Adds the hidden class
-    console.log("add hidden");
+    setTimeout(() => {
+        element.parentElement.classList.add("hidden");
+        console.log("Add hidden with timeout");
+    }, 100);
 }
