@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     bubbles.forEach(ele => {
         ele.addEventListener("click", function(e) {
             if (e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('bubble')) {
-                console.log('Clicked on image inside bubble');
+                hideThisScoreStar(e.target);
             }
         });
     });
@@ -274,8 +274,6 @@ function unhideRandomScoreStar() {
     let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
     spans[randomIndex].classList.remove("hidden"); // Removes the hidden class
     spans[randomIndex].classList.add("shown"); // Adds shown class
-   
-  
     displayQuestion();
 }
 
@@ -285,4 +283,12 @@ function hideRandomScoreStar() {
     spans[randomIndex].classList.remove("shown"); // Removes the shown class
     spans[randomIndex].classList.add("hidden"); // Adds the hidden class
     displayQuestion();
+}
+
+function hideThisScoreStar(element){
+    console.log("Click");
+    element.parentElement.classList.remove("shown"); // Removes the shown class
+    console.log("add shown");
+    element.parentElement.classList.add("hidden"); // Adds the hidden class
+    console.log("add hidden");
 }
