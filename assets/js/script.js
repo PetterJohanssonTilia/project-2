@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         checkAnswer2(selectedAnswer); //Click on image 2
     });
     bubbles.forEach(ele => {
-        ele.addEventListener("click", function(e) {
+        ele.addEventListener("mouseover", function(e) {
             if (e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('bubble')) {
                 hideThisScoreStar(e.target);
             }
