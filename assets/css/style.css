@@ -80,8 +80,28 @@ main {
     color:white;
     font-size: 3rem;
     z-index: 10;
-    
 }
+/* Attempts under guess boxes */
+.attempts-box {
+    background: rgb(103,103,103);
+    background: radial-gradient(circle, rgba(103,103,103,1) 0%, rgba(0,1,56,1) 100%);
+    border: 5px solid #F2F597 ;
+    border-radius: 50px;
+    width: auto;
+
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 3rem;
+    z-index: 10;
+    align-items: center;
+    padding: 10px;
+}
+.attempts-box p {
+    margin-right: 1em;
+}
+
 .score-box-animation {
     animation: score-box 0.5s linear;
 }
@@ -237,6 +257,9 @@ footer {
     .score-box{
         font-size: 1rem;
     }
+    .attempts-box{
+        font-size: 1rem;
+    }
 }
 /* Media query: Large phones and landscape phones(412px and up) */
 @media screen and (min-width: 411px){
@@ -268,6 +291,9 @@ footer {
     .score-box{
         font-size: 2rem;
     }
+    .attempts-box{
+        font-size: 1rem;
+    }
 }
 
 
@@ -295,6 +321,10 @@ footer {
     .score-box{
         margin-top: -60px;
     }
+    .attempts-box{
+        margin-top: -60px;
+        font-size: 1.8rem;
+    }
 }
   
 /* Media query: Laptops and larger (992px and up) */
@@ -321,7 +351,9 @@ footer {
     .game-container {
         width: 80%;
     }
-   
+    .attempts-box{
+        font-size: 2rem;
+    }
 }
 
 /* Media query: Laptops and larger (2560px and up) */
@@ -336,5 +368,8 @@ footer {
     }
     .score-box{
         margin-top: -120px;
+    }
+    .attempts-box{
+        font-size: 2.5rem;
     }
 }

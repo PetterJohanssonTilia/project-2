@@ -164,15 +164,19 @@ function displayImage(operand, object) {
  * Checks what's being clicked
  * If what's clicked weighs more than what is not clicked
  * increment score
+ * increment attempts
  */
  function checkAnswer(clickedOn) {
     let { sum1, sum2 } = calculateCorrectAnswer();
     if (clickedOn === 'clickedOn1' && sum1 >= sum2) {
         incrementScore();
+        incrementAttempts();
     } else if (clickedOn === 'clickedOn2' && sum2 >= sum1){
         incrementScore();
+        incrementAttempts();
     } else {
         decrementScore();
+        incrementAttempts();
     }
 }
 
@@ -205,7 +209,11 @@ function incrementScore(){
     multiplier2.textContent = "";
     scoreboxCorrect();
     unhideRandomScoreStar();
-   
+}
+
+function incrementAttempts(){
+    let oldAttempt = parseInt(document.getElementById("attempts-section").innerText);
+    document.getElementById("attempts-section").innerText = ++oldAttempt;
 }
 
 /**
