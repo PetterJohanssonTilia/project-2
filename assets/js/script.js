@@ -195,6 +195,7 @@ function calculateCorrectAnswer() {
  
 /**
  * Gets the current score from the DOM and increments it by 1
+ * Resets the multiplier
  * Uses 2 functions to first animate the score green and then unhides a scorestar
  */
 function incrementScore(){
@@ -209,6 +210,7 @@ function incrementScore(){
 
 /**
  * Gets the current score from the DOM and decrements it by 1
+ * Resets the multiplier
  * Uses 2 functions to first animate the score red and then hides a scorestar
  */
 function decrementScore(){
