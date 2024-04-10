@@ -97,7 +97,8 @@ function displayQuestion(){
         multiplier2.textContent = multiplier;  //stores the multiplier with the lowest weight object
         plural2 = "s"; //Displays the "S" with the multiple object
     }
-    displayImage(object1, object2); //Displays the objects images
+    displayImage(object1Image, object1); //Displays the objects images
+    displayImage(object2Image, object2);
    // displayImage2(object2);
     operand1.textContent = multiplier1.textContent + " " + object1.name + plural1; //Displays the objects names
     operand2.textContent = multiplier2.textContent + " " + object2.name + plural2;
@@ -155,9 +156,8 @@ function randomObject(){
     return object;
 }
 
-function displayImage(object1, object2) {
-    object1Image.innerHTML = `<img src="${object1.image}" alt="${object1.name}" width="100%" height="100%">`;
-    object2Image.innerHTML = `<img src="${object2.image}" alt="${object2.name}" width="100%" height="100%">`;
+function displayImage(operand, object) {
+    operand.innerHTML = `<img src="${object.image}" alt="${object.name}" width="100%" height="100%">`;
 }
 
 //function displayImage2(object2) {
