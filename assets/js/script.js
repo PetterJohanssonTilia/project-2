@@ -44,7 +44,7 @@ const bubbles = document.querySelectorAll('.bubble');
 let object1;
 let object2;
 let lowestWeightObject;
-let selectedAnswer;
+
 
 /**
  * Run game after DOM is loaded
@@ -52,16 +52,16 @@ let selectedAnswer;
  */
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
-        checkAnswer1(selectedAnswer); //Click on guess-box1
+        checkAnswer1(); //Click on guess-box1
     });
     document.getElementById("object-image1").addEventListener("click", function(){
-        checkAnswer1(selectedAnswer); //Click on image 1
+        checkAnswer1(); //Click on image 1
     });  
     document.getElementById("operand2").addEventListener("click", function(){
-        checkAnswer2(selectedAnswer); //Click on guess-box2
+        checkAnswer2(); //Click on guess-box2
     });
     document.getElementById("object-image2").addEventListener("click", function(){
-        checkAnswer2(selectedAnswer); //Click on image 2
+        checkAnswer2(); //Click on image 2
     });
     bubbles.forEach(ele => {
         ele.addEventListener("mouseover", function(e) {
@@ -162,43 +162,9 @@ function displayImage1(object1) {
 function displayImage2(object2) {
     object2Image.innerHTML = `<img src="${object2.image}" alt="${object2.name}" width="100%" height="100%">`;
 }
-/**
-function checkAnswer1(){ 
-    let sum1 = (calculateCorrectAnswer(sum1, sum2))
-
-    if (sum1 >= sum2){
-        console.log("correct");
-    } else {
-        console.log("incorrect");
-    }
-
-}
-function checkAnswer2(){ 
-    let sum2 = (calculateCorrectAnswer(sum1, sum2))
-
-    if (sum2 >= sum1){
-        console.log("correct");
-    } else {
-        console.log("incorrect");
-    }
-}
-
-function calculateCorrectAnswer(){
-    let sum1;
-    let sum2;
-    if (object1 === lowestWeightObject){
-        sum1 = object1.value * multiplier
-        sum 2 =object2.value
-    } else {
-        sum1 = object1.value 
-        sum 2 = object2.value * multiplier
-    }
-}
- */
-
 
  //------------------   Try 2 ------------------
- function checkAnswer1(selectedAnswer) {
+ function checkAnswer1() {
     let { sum1, sum2 } = calculateCorrectAnswer();
 
     if (sum1 >= sum2) {
@@ -208,7 +174,7 @@ function calculateCorrectAnswer(){
     }
 }
 
-function checkAnswer2(selectedAnswer) {
+function checkAnswer2() {
     let { sum1, sum2 } = calculateCorrectAnswer();
 
     if (sum2 >= sum1) {
@@ -244,6 +210,7 @@ function incrementScore(){
     unhideRandomScoreStar();
    
 }
+
 /**
  * Gets the current score from the DOM and decrements it by 1
  */
@@ -255,6 +222,11 @@ function decrementScore(){
     scoreboxIncorrect();
     hideRandomScoreStar();
 }
+
+/**
+ * Adds a class to animate the score going up
+ * removes class after animation is done
+ */
 function scoreboxCorrect(){
     let scorebox = document.getElementById("score-section");
     scorebox.classList.add("score-box-correct");
@@ -262,6 +234,11 @@ function scoreboxCorrect(){
         scorebox.classList.remove("score-box-correct");
     }, 300);
 }
+
+/**
+ * Adds a class to animate the score going down
+ * removes class after animation is done
+ */
 function scoreboxIncorrect(){
     let scorebox = document.getElementById("score-section");
     scorebox.classList.add("score-box-incorrect");
@@ -269,6 +246,10 @@ function scoreboxIncorrect(){
         scorebox.classList.remove("score-box-incorrect");
     }, 300);
 }
+
+/**
+ * Adds class .shown and removes .hidden to the spans
+ */
 function unhideRandomScoreStar() {
     let spans = document.querySelectorAll(".hidden"); // Selects all spans with the hidden class
     let randomIndex = Math.floor(Math.random() * spans.length); // Picks random number from the spans
@@ -277,6 +258,9 @@ function unhideRandomScoreStar() {
     displayQuestion();
 }
 
+/**
+ * Adds class .hidden and removes .shown to the spans
+ */
 function hideRandomScoreStar() {
     let spans = document.querySelectorAll(".shown"); // Selects all spans with the shown class
     let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number of all the shown spans
