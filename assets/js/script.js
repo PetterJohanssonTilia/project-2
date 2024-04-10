@@ -99,11 +99,8 @@ function displayQuestion(){
     }
     displayImage(object1Image, object1); //Displays the objects images
     displayImage(object2Image, object2);
-
     operand1.textContent = multiplier1.textContent + " " + object1.name + plural1; //Displays the objects names
     operand2.textContent = multiplier2.textContent + " " + object2.name + plural2;
-    console.log("displayquestion");
-    console.log("lowest", lowestWeightObject);
 }
 
 /**
@@ -179,9 +176,12 @@ function displayImage(operand, object) {
     }
 }
 
+/**
+ * Checks which objects has the lowest weight
+ * Adds multiplier to the lowest weight object
+ * Checks which objects weighs more after multiplier
+ */ 
 function calculateCorrectAnswer() {
-    console.log("object1:", object1);
-    console.log("object2:", object2);
     let sum1, sum2;
     if (object1 === lowestWeightObject) {
         sum1 = object1.weight * multiplier1.textContent;
@@ -195,6 +195,7 @@ function calculateCorrectAnswer() {
  
 /**
  * Gets the current score from the DOM and increments it by 1
+ * Uses 2 functions to first animate the score green and then unhides a scorestar
  */
 function incrementScore(){
     let oldScore = parseInt(document.getElementById("score-section").innerText);
@@ -208,6 +209,7 @@ function incrementScore(){
 
 /**
  * Gets the current score from the DOM and decrements it by 1
+ * Uses 2 functions to first animate the score red and then hides a scorestar
  */
 function decrementScore(){
     let oldScore = parseInt(document.getElementById("score-section").innerText);
@@ -265,10 +267,8 @@ function hideRandomScoreStar() {
 }
 
 function hideThisScoreStar(element){
-    console.log("Click");
     element.parentElement.classList.remove("shown"); // Removes the shown class
     setTimeout(() => {
         element.parentElement.classList.add("hidden");
-        console.log("Add hidden with timeout");
     }, 100);
 }
