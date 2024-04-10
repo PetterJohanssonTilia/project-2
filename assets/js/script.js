@@ -205,10 +205,17 @@ function calculateCorrectAnswer() {
 function incrementScore(){
     let oldScore = parseInt(document.getElementById("score-section").innerText);
     document.getElementById("score-section").innerText = ++oldScore;
+    if (oldScore >= 10){
+        let Attempt = parseInt(document.getElementById("attempts-section").innerText);
+        alert("Congratulations! You win with only " + (Attempt + 1) + " attempts.");
+        document.getElementById("attempts-section").innerText = "-1"; // Resets the attempts, -1 to make it start at 0 after this function
+        document.getElementById("score-section").innerText = "0"; // Resets the score
+    } else{
     multiplier1.textContent = "";
     multiplier2.textContent = "";
     scoreboxCorrect();
     unhideRandomScoreStar();
+    }
 }
 
 function incrementAttempts(){
