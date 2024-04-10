@@ -52,16 +52,16 @@ let lowestWeightObject;
  */
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("operand1").addEventListener("click", function(){
-        checkAnswer1(); //Click on guess-box1
+        checkAnswer('clickedOn1'); //Click on guess-box1
     });
     document.getElementById("object-image1").addEventListener("click", function(){
-        checkAnswer1(); //Click on image 1
+        checkAnswer('clickedOn1'); //Click on image 1
     });  
     document.getElementById("operand2").addEventListener("click", function(){
-        checkAnswer2(); //Click on guess-box2
+        checkAnswer('clickedOn2'); //Click on guess-box2
     });
     document.getElementById("object-image2").addEventListener("click", function(){
-        checkAnswer2(); //Click on image 2
+        checkAnswer('clickedOn2'); //Click on image 2
     });
     bubbles.forEach(ele => {
         ele.addEventListener("mouseover", function(e) {
@@ -99,7 +99,7 @@ function displayQuestion(){
     }
     displayImage(object1Image, object1); //Displays the objects images
     displayImage(object2Image, object2);
-   // displayImage2(object2);
+
     operand1.textContent = multiplier1.textContent + " " + object1.name + plural1; //Displays the objects names
     operand2.textContent = multiplier2.textContent + " " + object2.name + plural2;
     console.log("displayquestion");
@@ -117,6 +117,7 @@ function lowestWeight (object1, object2) {
         return object2;
     }
 }
+
 /**
  * 
  * Pick a multiplier for the smaller of the 2 objects
@@ -133,6 +134,7 @@ function Multiplier(size) {
             return 1; // No multiplier for huge items
     }
 }
+
 /**
  * Creates a random category
  * makes sure the categories aren't the same
@@ -146,6 +148,7 @@ function randomCategory(){
     previousCategory = newCategory; //update previous category
     return newCategory;
 }
+
 /**
  * Creates a random Object from the random category
  * since the categories can't be the same twice, the objects will never be the same twice
@@ -160,25 +163,16 @@ function displayImage(operand, object) {
     operand.innerHTML = `<img src="${object.image}" alt="${object.name}" width="100%" height="100%">`;
 }
 
-//function displayImage2(object2) {
- //   object2Image.innerHTML = `<img src="${object2.image}" alt="${object2.name}" width="100%" height="100%">`;
-//}
-
- //------------------   Try 2 ------------------
- function checkAnswer1() {
+/**
+ * Checks what's being clicked
+ * If what's clicked weighs more than what is not clicked
+ * increment score
+ */
+ function checkAnswer(clickedOn) {
     let { sum1, sum2 } = calculateCorrectAnswer();
-
-    if (sum1 >= sum2) {
+    if (clickedOn === 'clickedOn1' && sum1 >= sum2) {
         incrementScore();
-    } else {
-        decrementScore();
-    }
-}
-
-function checkAnswer2() {
-    let { sum1, sum2 } = calculateCorrectAnswer();
-
-    if (sum2 >= sum1) {
+    } else if (clickedOn === 'clickedOn2' && sum2 >= sum1){
         incrementScore();
     } else {
         decrementScore();
