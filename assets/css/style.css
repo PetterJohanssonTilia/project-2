@@ -388,6 +388,9 @@ footer {
     .attempts-box{
         font-size: 2rem;
     }
+    .play-box{
+        font-size: 2rem;
+    }
 }
 
 /* Media query: Laptops and larger (2560px and up) */
