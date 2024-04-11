@@ -128,16 +128,14 @@ h2{
     border: 5px solid #F2F597 ;
     border-radius: 50px;
     width: auto;
-    top: -1000px;
-    margin-top: -100px;
-    margin-bottom: 100px;
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     color:white;
     font-size: 3rem;
     z-index: 10;
     align-items: center;
-    padding: 10px;
+    height: 50%;
 }
 .attempts-box p {
     margin-right: 1em;
@@ -335,6 +333,7 @@ footer {
     }
     .attempts-box{
         font-size: 1rem;
+        top: -12000px;
     }
 }
 
@@ -399,6 +398,12 @@ footer {
     .play-box{
         font-size: 2rem;
     }
+    h1 {
+        margin-top: 50px;
+    }
+    .guess-box1, .guess-box2 {
+        margin-top: 30px;
+    }
 }
 
 /* Media query: Laptops and larger (2560px and up) */
@@ -416,5 +421,12 @@ footer {
     }
     .attempts-box{
         font-size: 2.5rem;
+    }
+    
+    h1 {
+        margin-top: 50px;
+    }
+    .guess-box1, .guess-box2 {
+        margin-top: -10px;
     }
 }
