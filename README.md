@@ -2,59 +2,57 @@
   <img src="./assets/readme/images/different-screens.png" alt="Home Page">
 </div>
 
-<h1>Angry neighbors</h1>
-This is a HTML/CSS only portfolio-project. <br>
-The website is designed to be a hub for people that likes to complain about their neighbors. The website offers satirical articles and it also allows for users to upload their own photos and share their real world neighbor stories. The goal is to make the website fun. You'll either laugh at the satire articles or laugh/symphatise with other people that don't have the best of neighbors.<br><br>
+<h1>What Weighs More?</h1>
+This is a Javascript portfolio-project. <br>
+The website is designed to be a relaxing game of guessing and estimating weight of objects. The website offers a clear and simple game with visuals to keep the player engaged.<br><br>
 
-The design is stylized in a cartoonish way to emphasize the light-heartedness of the website and to prevent it from becoming a place meant to promote actual hate of your neighbors.
+The design is cartoonish and simple to allow for the animations in the background to shine more, creating a calm and enjoyable game.
 
 ## Table of Contents
 
 1.  <details open>
-        <summary><a href="#ux">UX</a></summary>
+      <summary><a href="#ux">UX</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#goals">Goals</a></summary>
 
-        <ul>
+    - [Visitor Goals](#visitor-goals)
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+      </details>
+      </li>
+
         <li><details>
-        <summary><a href="#goals">Goals</a></summary>
+        <summary><a href="#visual-design">Visual Design<a><summary>
 
-        - [Visitor Goals](#visitor-goals)
-        - [Business Goals](#business-goals)
-        - [User Stories](#user-stories)
-        </details></li>
-
-        <li><details>
-        <summary><a href="#visual-design">Visual Design</a></summary>
-
-        - [Wireframes](#wireframes)
-        - [Fonts](#fonts)
-        - [Icons](#icons)
-        - [Colors](#colors)
-        - [Images](#images)
-        - [Styling](#styling)
-        </details></li>
-        </ul>
+    - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colors](#colors)
+    - [Images](#images)
+    - [Styling](#styling)
+    </details></li></ul>
 
     </details>
 
 2.  <details open>
-        <summary><a href="#features">Features</a></summary>
+      <summary><a href="#features">Features</a></summary>
+      <ul>
+      <li><details>
+      <summary><a href="#page-elements">Page Elements</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#page-elements">Page Elements</a></summary>
-
-        - [All Pages](#all-pages)
-        - [Index Page](#index-page)
-        - [Gallery Page](#gallery-page)
-        - [Contact Page](#contact-page)
-        </details></li>
+    - [All Pages](#all-pages)
+    - [Index Page](#index-page)
+    - [Gallery Page](#gallery-page)
+    - [Contact Page](#contact-page)
+      </details></li>
 
         <li><details>
         <summary><a href="#additional-features">Additional Features</a></summary>
 
-        - [Image Loading Blur](#image-loading-blur)
-        - [Email](#email)
-        </details></li>
+    - [Image Loading Blur](#image-loading-blur)
+    - [Email](#email)
+      </details></li>
 
         <li><details>
         <summary><a href="#feature-ideas">Feature Ideas</a></summary>
@@ -66,63 +64,63 @@ The design is stylized in a cartoonish way to emphasize the light-heartedness of
     </details>
 
 3.  <details open>
-        <summary><a href="#technologies-used">Technologies Used</a></summary>
+      <summary><a href="#technologies-used">Technologies Used</a></summary>
 
-        - [Languages](#languages)
-        - [Frameworks](#frameworks)
-        - [Libraries](#libraries)
-        - [APIs](#apis)
-        - [Platforms](#platforms)
-        - [Other Tools](#other-tools)
+    - [Languages](#languages)
+    - [Frameworks](#frameworks)
+    - [Libraries](#libraries)
+    - [APIs](#apis)
+    - [Platforms](#platforms)
+    - [Other Tools](#other-tools)
 
     </details>
 
 4.  <details open>
-        <summary><a href="#testing">Testing</a></summary>
+      <summary><a href="#testing">Testing</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#methods">Methods</a></summary>
-        - [Validation](#validation)
-        - [General Testing](#general-testing)
-        - [Mobile Testing](#mobile-testing)
-        - [Desktop Testing](#desktop-testing)
-        </details></li>
+      <ul>
+      <li><details>
+      <summary><a href="#methods">Methods</a></summary>
+      - [Validation](#validation)
+      - [General Testing](#general-testing)
+      - [Mobile Testing](#mobile-testing)
+      - [Desktop Testing](#desktop-testing)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#bugs">Bugs</a></summary>
+      <li><details>
+      <summary><a href="#bugs">Bugs</a></summary>
 
-        - [Known Bugs](#known-bugs)
-        - [Fixed Bugs](#fixed-bugs)
-        </details></li>
-        </ul>
+    - [Known Bugs](#known-bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    </details></li>
+    </ul>
 
     </details>
 
 5.  <details open>
-        <summary><a href="#deployment">Deployment</a></summary>
+      <summary><a href="#deployment">Deployment</a></summary>
 
-        <ul>
-        <li><details>
-        <summary><a href="#local-deployment">Local Deployment</a></summary>
-        - [Local Preparation](#local-preparation)
-        - [Local Instructions](#local-instructions)
-        </details></li>
+      <ul>
+      <li><details>
+      <summary><a href="#local-deployment">Local Deployment</a></summary>
+      - [Local Preparation](#local-preparation)
+      - [Local Instructions](#local-instructions)
+      </details></li>
 
-        <li><details>
-        <summary><a href="#github-deployment">Github Deployment</a></summary>
-        - [Github Preparation](#github-preparation)
-        - [Github Instructions](#github-instructions)
-        </details></li>
-        </ul>
+      <li><details>
+      <summary><a href="#github-deployment">Github Deployment</a></summary>
+      - [Github Preparation](#github-preparation)
+      - [Github Instructions](#github-instructions)
+      </details></li>
+      </ul>
 
     </details>
 
 6.  <details open>
-        <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
+      <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
         
-        - [Content](#content)
-        - [Contact](#contact)
+      - [Content](#content)
+      - [Contact](#contact)
     </details>
 
 ---
@@ -133,33 +131,32 @@ The design is stylized in a cartoonish way to emphasize the light-heartedness of
 
 ### Visitor Goals
 
-The target audience for Angry Neighors are:
+The target audience for What Weighs More are:
 
-- People who want read satire articles.
-- People who want to laugh at other peoples stories and photos
-- People that want to share their own stories and photos.
+- People who want to play a relaxing game.
+- People who want to see how good they are at estimating weight.
+- People who want to see their knowledge of random objects.
 
 User goals are:
 
-- View and submit photos.
-- Read and submit stories.
-- Read the articles.
+- Getting a relaxing experience.
+- Learning more about weight
+- Learning more about different objects
 
-Angry Neighbors fills these needs by:
+What weighs more fills these needs by:
 
-- Putting the articles and a big colorful hero-picture on the front page, capturing the users interest
-- Letting the users navigate easily through the site.
-- making the site very simple with little distractions.
-- Putting all the gallary images in a collage letting the user feel like they're the ones finding the new fun photos
-- Putting a big "submit your own story" button on the story page, encouraging members to contribute with even more content
+- Clearly stating the rules of the game
+- Showing the game front and center without distractions
+- Not having a leaderboard, time limit or limit of attempts to not make the user stressed
+- Making the website simple, allowing for a relaxing background animation
+- Having many different categories of objects in the game
+- Having objects of many different weight classes along with a multiplier to make it more challenging
 
 ### User Stories
 
-1. As a user interested in laughing at other peoples missery, I expect to see real world stories.
-2. As a user I'd like to be able to share my own stories.
-3. If I were interested in submiting a story, I expect to know where.
-4. I would like to view the gallery images on any device.
-5. I expect to be able to follow Angry neighbors through social media.
+1. As a user interested in relaxing games I'd like to be able to play without feeling any stress
+2. As a user I'd to see many different objects
+3. I'd Like to get a challenge and really test my guessing abilites
 
 ## Visual Design
 
