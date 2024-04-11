@@ -281,7 +281,6 @@ footer {
         font-size: 2rem;
         padding: 0;
     }
-        font-size: 1rem;
     }
     .guess-box2, .guess-box1 {
         padding: 10px;
@@ -297,7 +296,7 @@ footer {
     .attempts-box{
         font-size: 1rem;
     }
-}
+
 /* Media query: Large phones and landscape phones(412px and up) */
 @media screen and (min-width: 411px){
     main {

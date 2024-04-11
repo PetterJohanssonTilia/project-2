@@ -314,27 +314,26 @@ Website speed optimisation has been checked with [PageSpeed Insights](https://pa
 
 CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 <img src="assets/readme/validator/wc3cssvalidator.PNG" alt="wc3 css validator">
-<img src="assets/readme/validator/wc3cssvalidation.PNG" alt="wc3 css validator results">
+<img src="assets/readme/validator/cssvalidation.jpg" alt="wc3 css validator results">
 Results are no errors found
 
 and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
 <img src="assets/readme/validator/cssautoprefixer.PNG" alt="autoprefixer css online">
 
 Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
-<img src="assets/readme/validator/wc3linkerchecker.PNG" alt="wc3 link checker">
-All links and anchors are working. The link checker couldn't check Facebook and Twitter/X due to robots exlusion rules and therefore had to be manually tested.
-<img src="assets/readme/validator/brokenlinks.PNG" alt="wc3 link checker result">
+<img src="assets/readme/validator/wc3linkerchecker.PNG" alt="wc3linkchecker">
+
+All links and anchors are working.
 
 ### General Testing
 
 - Each time a feature was added, all the functions were tested to see if there was an impact.
 - The site was sent to friends for feedback and testing.
-- All forms have validation and will not submit without the proper information.
 - .gitignore file has been included to prevent system file commits.
-- External links open in a new tab.
 
 ### Manual Testing
 
+- Testing done through playing the game
 - Checked the links to Twitter and Facebook in the footer.
 
 ### Mobile Testing
