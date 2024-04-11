@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhatWeighsMore</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div id="multiplier1" class="multiplier-box"></div>
@@ -13,51 +13,113 @@
     <main>
       <section id="game-section">
         <div class="game-container">
-          <div class="WhatWeighsMore"><h1> What Weighs More? </h1></div>
+          <div class="WhatWeighsMore"><h1>What Weighs More?</h1></div>
           <div id="operand1" class="guess-box1">Operand1</div>
           <div id="operand2" class="guess-box2">Operand2</div>
-          <div id="score-section" class="score-box" >0</div>
-          <div class="attempts-box"><p>Attempts</p><span id="attempts-section">0</span></div>
+          <div id="score-section" class="score-box">0</div>
+          <div class="attempts-box">
+            <p>Attempts</p>
+            <span id="attempts-section">0</span>
+          </div>
           <div id="object-image1" class="object-image1">Object 1 Image</div>
           <div id="object-image2" class="object-image2">Object 2 Image</div>
         </div>
       </section>
-        <div id="score-star-container">
-          <div class="score-star" id="score-star">
-            <!-- --duration variable is used for each span to make it's animation duration unique-->
-            <span class="hidden bubble" style="--duration: 11"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 12"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 9"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 12"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 13"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 14"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 11"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 9"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 11"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 9"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 8"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 11"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 12"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 8"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 9"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 11"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 9"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 8"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 11"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 14"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 15"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 12"><img src="assets/images/bubble.png" alt="Bubble"></span>
-            <span class="hidden bubble" style="--duration: 10"><img src="assets/images/bubble.png" alt="Bubble"></span>
-          </div>
+      <div id="score-star-container">
+        <div class="score-star" id="score-star">
+          <!-- duration variable is used for each span to make it's animation duration unique -->
+          <span class="hidden bubble" style="--duration: 11"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 12"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 9"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 12"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 13"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 14"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 11"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 9"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 11"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 9"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 8"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 11"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 12"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 8"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 9"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 11"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 9"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 8"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 11"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 14"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 15"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 12"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
+          <span class="hidden bubble" style="--duration: 10"
+            ><img src="assets/images/bubble.png" alt="Bubble"
+          /></span>
         </div>
-      </section>
+      </div>
       <footer>This game was made by PJ</footer>
     </main>
     <script src="assets/js/script.js"></script>

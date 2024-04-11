@@ -170,18 +170,9 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
 <div align="center">
   <img src="./assets/readme/images/fonts1.JPG" alt="Fonts">
 </div>
-- The primary font, [Pridi](https://fonts.google.com/specimen/Pridi?query=pridi) was chosen because it is big, bold and a bit cartoonish. It looks friendly and playful. It is also sans-serif, making it very easily readable throughout different color schemes.
-- The secondary font, [Pontano](https://fonts.google.com/specimen/Pontano+Sans?query=pontano) was chosen because it is thin, and plain. As a font, it gave me the impression of writing in word or a type writer. That is why it was chosen as the font for the user stories. Creating a stark contrast from what is satire and what is real user stories.
 
-### Icons
-
-<div align="center">
-  <img src="./assets/readme/images/icons1.JPG" alt="Icons">
-</div>
-
-- Icons are taken from the [Fontawesome](https://fontawesome.com/) Icon library and are utilised as classes in the `<i>` tag.
-- As they are utilised as classes, they can easily be styled using other classes or IDs in the same tag.
-- Icons are utilised in the footer for social account icons.
+- The primary font, <a href="https://fonts.google.com/specimen/Barlow+Condensed?query=barlow+con">[Barlow Condensed]</a> Is used in the games boxes and is used because it's calm and simple
+- The secondary font, which is actually used for the header is <a href="https://fonts.google.com/specimen/Imbue?query=imbue">Imbue</a> it looks elegant and fit very nicely with the dark background. It was chosen to contrast the other fonts making the player only read it once and then easily sort it out from the other text used in the game.
 
 ### Colors
 
@@ -189,6 +180,7 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
   <img src="./assets/readme/images/colorpalette.png" alt="Color Pallette">
 </div>
 
+- Colors found on <a href="https://colorhunt.co/palette/0a1d56492e8737b5b6f2f597">ColorHunt</a>
 - I wanted the site to look friendly, cartoonish and light hearted.
 - The primary color used is the deep blue. This is used to create a stark contrast with the colors of the other elements on the page, drawing the eyes and focus on them.
 - One accent color was chosen, the dark yellow, to give a feeling of "warning", reminiscing of a stop signal to showcase that this is a site of satirical complaints.
@@ -200,14 +192,14 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
   <img src="./assets/readme/images/gallery.png" alt="Gallery Images">
 </div>
 
-- A gallery page to display all the images
-- For people to feel more engaged the pictures are presented as a collage allowing the users to "find" new and fun picture.
-- By having them displayed as a collage while also allowing users to upload photos by sending in an email the user won't be able to see all the photos and therefor encourages the user to visit the site often to not miss anything.
+- All the objects images are found on <a href="https://pixabay.com/">pixabay</a>
+- I've chosen these pictures because they're all 2d vector graphics and match easily
+- The bubble picture is drawn by me
 
 ### Styling
 
-- For this project I used flexbox to make it more responsive and for it's ease of use. Instead of tables, grids and floats.
-- I used a has function for the "anger scale" buttons to indicate they've been selected.
+- For this project I used grid to more easily put all the different elements in their correct places
+- I used animations to make the simple style look more interesting while playing
 
 ---
 
@@ -215,22 +207,15 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
 
 ## Page Elements
 
-### All Pages
+### Header
 
-#### Navbar
+### Guess-boxes
 
-<div align="center">
-  <img src="./assets/readme/images/navbarextended.png" alt="navbar">
-  <img src="./assets/readme/images/navbarcollapsed.png" alt="navbar collapsed">
-  
-  <img src="assets/readme/images/submitstorynavbarphone.PNG" style="height: 200px" alt="navbar extended">
-</div>
+### Score-box
 
-- The Navbar is simple, providing four options.
-- The Logo is always highlighted, swapping position as necessary depending on device size.
-- On smaller devices, the menu becomes collapsible.
-- The mobile nav button has been placed to the right for ease of use with one hand.
-- The navbar is fixed so it is visible no matter how far you scroll.
+### Attempts-box
+
+### Play-button
 
 #### Footer
 
@@ -266,17 +251,16 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
 
 ## Languages
 
-- [HTML](w3.org/standards/webdesign/htmlcss)
+- [HTML]
   - Page markup.
-- [CSS](w3.org/standards/webdesign/htmlcss)
-  - Styling.
+- [CSS]
+  - Styling and animations -[Java-script]
+  - Interactivity
 
 ## Libraries
 
 - [Google Fonts](https://fonts.google.com)
   - Font Styles.
-- [Fontawesome](https://fontawesome.com/)
-  - Used for icons
 
 ## Platforms
 
@@ -289,10 +273,10 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
 
 - [Figma](https://figma.com/)
   - To create wireframes.
-- [Favicon Generator](https://www.favicon-generator.org/)
-  - Favicons
 - [Colorhunt](https://colorhunt.co/)
   - Creating color pallettes.
+- [grid.layoutfit](https://grid.layoutit.com/)
+  - Create the grid layout
 
 ---
 
@@ -306,38 +290,28 @@ HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 
 <img src="assets/readme/validator/wc3validator.PNG" alt="wc3 validator">
 
-|          |                                 Index                                 |                                                                 Gallery |                                                                 Stories |                                                                Submit stories |
-| -------- | :-------------------------------------------------------------------: | ----------------------------------------------------------------------: | ----------------------------------------------------------------------: | ----------------------------------------------------------------------------: | --- |
-|          | <img src="assets/readme/validator/index.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/gallery.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/stories.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/submitstories.PNG" style=" height: 100px;"> | pic |
-| Warnings |                                 None                                  |                                                                    None |                                                  Section lacks heading. |                                                                          None |
-| Bugs     |                                 None                                  |                                                                    None |                                                                    None |                                                                          None |
-| Alerts   |                                 None                                  |                                                                    None |                                                                    None |                                                                          None |
-| Errors   |                                 None                                  |                                                                    None |                                                                    None |                                                                          None |
+|        | Index.html | Game.html |
+| ------ | :--------: | --------: |
+| Errors |    None    |      None |
 
 HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.org/).
 <img src="assets/readme/validator/wavevalidator.PNG" alt="wave validator">
 
-|          |                                 Index                                 |                                                                 Gallery |                                                                 Stories |                                                                Submit stories |
-| -------- | :-------------------------------------------------------------------: | ----------------------------------------------------------------------: | ----------------------------------------------------------------------: | ----------------------------------------------------------------------------: | --- |
-|          | <img src="assets/readme/validator/index.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/gallery.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/stories.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/submitstories.PNG" style=" height: 100px;"> | pic |
-| Warnings |                                 None                                  |                                                                    None |                                                                    None |                                                                          None |
-| Bugs     |                                 None                                  |                                                                    None |                                                                    None |                                                                          None |
-| Alerts   |                   Adjacent links go to the same URL                   |                                       Adjacent links go to the same URL |                                       Adjacent links go to the same URL |                                             Adjacent links go to the same URL |
-| Errors   |       A form label is present, but does not contain any content       |               A form label is present, but does not contain any content |               A form label is present, but does not contain any content |                     A form label is present, but does not contain any content |
-
-The alerts are because you can click the link to get to the page that you're currently on<br>
-The form label not containing content is a known bug that you can find under <a href="#bugs">Bugs</a></br></br>
+|        |                                 index.html                                  |                                                                  game.html |
+| ------ | :-------------------------------------------------------------------------: | -------------------------------------------------------------------------: |
+|        | <img src="assets/readme/validator/webaimindex.jpg" alt="webaim validation"> | <img src="assets/readme/validator/webaimgame.jpg" alt="webaim validation"> |
+| Errors |                                    None                                     |                                                                       None |
+| Alerts |                                    None                                     |                                      A paragraph is used instead of header |
 
 Website speed optimisation has been checked with [PageSpeed Insights](https://pagespeed.web.dev/).
 
 <img src="assets/readme/validator/pagespeedinsights.PNG" alt="page speed insight">
 
-|               |                                 Index                                 |                                                                 Gallery |                                                                 Stories |                                                                Submit stories |
-| ------------- | :-------------------------------------------------------------------: | ----------------------------------------------------------------------: | ----------------------------------------------------------------------: | ----------------------------------------------------------------------------: | --- |
-|               | <img src="assets/readme/validator/index.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/gallery.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/stories.PNG" style=" height: 100px;"> | <img src="assets/readme/validator/submitstories.PNG" style=" height: 100px;"> | pic |
-| Mobile        |     <img src="assets/readme/validator/pagespeedmobileindex.PNG">      |         <img src="assets/readme/validator/pagespeeddesktopgallery.PNG"> |          <img src="assets/readme/validator/pagespeedmobilestories.PNG"> |          <img src="assets/readme/validator/pagespeedmobilesubmitstories.PNG"> |
-| Desktop       |     <img src="assets/readme/validator/pagespeeddesktopindex.PNG">     |          <img src="assets/readme/validator/pagespeedmobilegallery.PNG"> |         <img src="assets/readme/validator/pagespeeddesktopstories.PNG"> |         <img src="assets/readme/validator/pagespeeddesktopsubmitstories.PNG"> |
-| Biggest issue |                 Images size and format not optimised                  |                                    Images size and format not optimised |                                    Images size and format not optimised |                                                                          None |
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
 
 CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 <img src="assets/readme/validator/wc3cssvalidator.PNG" alt="wc3 css validator">
