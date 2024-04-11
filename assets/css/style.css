@@ -133,6 +133,7 @@ main {
     z-index: 10;
     align-items: center;
     height: 50%;
+    font-family: Barlow Condensed;
 }
 .attempts-box p {
     margin-right: 1em;
