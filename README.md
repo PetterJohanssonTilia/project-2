@@ -290,7 +290,7 @@ HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 
 <img src="assets/readme/validator/wc3validator.PNG" alt="wc3 validator">
 
-|        | Index.html | Game.html |
+|        | index.html | game.html |
 | ------ | :--------: | --------: |
 | Errors |    None    |      None |
 
@@ -307,11 +307,10 @@ Website speed optimisation has been checked with [PageSpeed Insights](https://pa
 
 <img src="assets/readme/validator/pagespeedinsights.PNG" alt="page speed insight">
 
-| Tables        |      Are      |  Cool |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
+|                    |                                   index.html                                    |                                                                      game.html |
+| ------------------ | :-----------------------------------------------------------------------------: | -----------------------------------------------------------------------------: |
+|                    | <img src="assets/readme/validator/pagespeedindex.jpg" alt="page speed insight"> | <img src="assets/readme/validator/pagespeedgame.jpg" alt="page speed insight"> |
+| Performance issues |                                      none                                       |                                                                           none |
 
 CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 <img src="assets/readme/validator/wc3cssvalidator.PNG" alt="wc3 css validator">
