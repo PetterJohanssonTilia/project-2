@@ -16,6 +16,24 @@ body {
     box-sizing: border-box;  /*Includes borders when calculating */
 }
 
+h1{
+    font-family: Imbue;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-family: Imbue;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 /* ========= Index ========= */
 
 main {
@@ -41,27 +59,6 @@ main {
     font-weight: bold;
 
 }
-
-h1{
-    font-family: Imbue;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-h2{
-    font-family: Imbue;
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-
-
 
 /* ========= Game ========= */
 
@@ -94,7 +91,7 @@ h2{
 .guess-box1, .guess-box2{
     font-family: Barlow Condensed;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 3rem;
     background: radial-gradient(circle, rgba(103,103,103,1) 0%, rgba(0,1,56,1) 100%);
     border: 8px solid #F2F597;
     border-radius: 50px;
@@ -284,11 +281,12 @@ footer {
         font-size: 2rem;
         padding: 0;
     }
-    .guess-box1{
+    {
         font-size: 1rem;
     }
-    .guess-box2{
-        font-size: 1rem;
+    .guess-box2, .guess-box1 {
+        padding: 10px;
+        font-size: 2rem;
     }
     .object-image1, .object-image2{
         width: 80px;
