@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Imbue:opsz,wght@10..100,100..900&display=swap'); /*Barlow Condensed*/
 /* General style rules */
 body {
+ overflow-x: hidden;
+ width: 100%;
  margin: 0;
  padding: 0;
  min-height: 100vh;
  background: linear-gradient(to bottom , #0A1D56 , #492E87);
  display: flex;
+}
+
+* {
+    box-sizing: border-box;  /*Includes borders when calculating */
 }
 
 /* ========= Index ========= */
@@ -42,7 +48,7 @@ h1{
     font-size: 3rem;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 h2{
@@ -122,8 +128,9 @@ h2{
     border: 5px solid #F2F597 ;
     border-radius: 50px;
     width: auto;
-
-    margin-top: 0px;
+    top: -1000px;
+    margin-top: -100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     color:white;
