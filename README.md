@@ -43,33 +43,26 @@ The design is cartoonish and simple to allow for the animations in the backgroun
 
     - [All Pages](#all-pages)
     - [Index Page](#index-page)
-    - [Gallery Page](#gallery-page)
-    - [Contact Page](#contact-page)
+    - [Game Page](#gallery-page)
       </details></li>
-
         <li><details>
         <summary><a href="#additional-features">Additional Features</a></summary>
 
-    - [Image Loading Blur](#image-loading-blur)
     - [Email](#email)
       </details></li>
-
         <li><details>
         <summary><a href="#feature-ideas">Feature Ideas</a></summary>
         - [Basic](#basic)
         - [Content](#content)
         </details></li>
         </ul>
-
     </details>
 
 3.  <details open>
       <summary><a href="#technologies-used">Technologies Used</a></summary>
 
     - [Languages](#languages)
-    - [Frameworks](#frameworks)
     - [Libraries](#libraries)
-    - [APIs](#apis)
     - [Platforms](#platforms)
     - [Other Tools](#other-tools)
 
@@ -77,7 +70,6 @@ The design is cartoonish and simple to allow for the animations in the backgroun
 
 4.  <details open>
       <summary><a href="#testing">Testing</a></summary>
-
       <ul>
       <li><details>
       <summary><a href="#methods">Methods</a></summary>
@@ -86,39 +78,32 @@ The design is cartoonish and simple to allow for the animations in the backgroun
       - [Mobile Testing](#mobile-testing)
       - [Desktop Testing](#desktop-testing)
       </details></li>
-
       <li><details>
       <summary><a href="#bugs">Bugs</a></summary>
-
     - [Known Bugs](#known-bugs)
     - [Fixed Bugs](#fixed-bugs)
     </details></li>
     </ul>
-
     </details>
 
 5.  <details open>
       <summary><a href="#deployment">Deployment</a></summary>
-
       <ul>
       <li><details>
       <summary><a href="#local-deployment">Local Deployment</a></summary>
       - [Local Preparation](#local-preparation)
       - [Local Instructions](#local-instructions)
       </details></li>
-
       <li><details>
       <summary><a href="#github-deployment">Github Deployment</a></summary>
       - [Github Preparation](#github-preparation)
       - [Github Instructions](#github-instructions)
       </details></li>
       </ul>
-
     </details>
 
 6.  <details open>
       <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
-        
       - [Content](#content)
       - [Contact](#contact)
     </details>
@@ -162,8 +147,11 @@ What weighs more fills these needs by:
 
 ### Wireframes
 
-Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
-<img src="./assets/readme/images/wireframes.png" alt="Wireframes">
+Wireframes:
+Index
+<img src="./assets/readme/wireframes/wireframeindex.jpg" alt="Wireframes">
+Game
+<img src="./assets/readme/wireframes/wireframegame.jpg" alt="Wireframes">
 
 ### Fonts
 
@@ -209,26 +197,45 @@ Wireframes: <a href="./assets/readme/wireframes/Wireframes.pdf">Wireframes</a>
 
 ### Header
 
+<img src="./assets/readme/header.JPG" alt="header">
+
+At the top of all pages to display the name of the game.
+
 ### Guess-boxes
+
+<img src="./assets/readme/guessbox.JPG" alt="guessbox">
+
+These are displayed front and center with clear borders to clearly show the objects for the game.
 
 ### Score-box
 
+<img src="./assets/readme/score.JPG" alt="score">
+
+The score box is displayed under the guess-boxes.
+and is animated to both jump and change color depending
+if you answer correct or false.
+
 ### Attempts-box
+
+<img src="./assets/readme/attempts.JPG" alt="score">
+
+The attempts-box is located under scorebox and displays the number of attempts you've made, each attempt is a click and this box is not animated to not bring out too many visuals.
 
 ### Play-button
 
+<img src="./assets/readme/play.JPG" alt="play">
+The play button is located on the front page and displayed clearly.
+It has a wider gap between itself and the text than the header and the text to seperate them more clearly.
+
 #### Footer
 
-<div align="center">
-  <img src="./assets/readme/images/icons1.JPG" alt="Footer">
-</div>
+<img src="./assets/readme/footer.JPG" alt="Footer">
 
-- Located at the bottom of every page, only highlighting social sites.
+- Located at the bottom of every page
+- Displays the author of the project
 - Changing shape for larger or smaller devices.
 
 ### Index Page
-
-#### Jumbotron Image
 
 <img src="assets/readme/images/splashimage.PNG" alt="Splash image">
 
@@ -350,51 +357,32 @@ All links and anchors are working.
 
 ### Testing User Stories
 
-1. As a user interested in laughing at other peoples missery, I expect to see real world stories.
+1. As a user interested in relaxing games I'd like to be able to play without feeling any stress
 
-In the stories page you can find user submited stories</br>
-<img src="assets/readme/validator/stories.PNG" alt="stories page" style="height: 200px">
+The game features no attempts limit or time limit. This makes the game more
+suited for casual play
 
-0. As a user I'd like to be able to share my own stories.
+2. As a user I'd to see many different objects
 
-In the submit stories page you can easily submit your own stories
-<img src="assets/readme/validator/submitstories.PNG" alt="submit stories page" style="height: 200px">
+The game contains 4 categories and 5 objects in each category. Adding more objects to the game has been made easy by using arrays
 
-0. If I were interested in submiting a story, I expect to know where.
+3. I'd Like to get a challenge and really test my guessing abilites
 
-You'll easily find the Submit story page by either looking at the navbar or while reading stories in the story page.
-
-<img src="assets/readme/images/submitstorynavbar.PNG" alt="navbar" style="height: 200px">
-<img src="assets/readme/images/submitstorynavbarphone.PNG" alt="navbar on phone" style="height: 200px">
-<img src="assets/readme/images/submitstory.png" alt="submit story page" style="height: 200px">
-
-0. I would like to view the gallery images on any device.
-
-The pages are responsive and will turn from rows on bigger screens to columns on smaller screens. The navbar will collapse and extend on different screen sizes too as previously shown.
-
-<img src="assets/readme/images/indexdesktop.PNG" alt="submit story page" style="height: 200px">
-
-<img src="assets/readme/images/indexmobile.png" alt="submit story page" style="height: 200px">
-
-0. I expect to be able to follow Angry neighbors through social media.
-
-You'll easily find the links the Angry neighbors social media in the footer on every page.
-
-<img src="assets/readme/images/footer.PNG" alt="submit story page" style="height: 40px">
+With the random multiplier being added to the lowest weight target it makes
+for a much more complex guessing game
 
 ## Bugs
 
 ### Known Bugs
 
-- Wave.webaim.org validator reports empty labels while using the Fontawesome i elements with no other text inside.
-- Wave.webaim.org validator warns that navbar links are redundant: That you are be able to see a link to a page that you're currently on
+- If you're at minus 1 score and you have no score-star spans active the displayQuestion function will not display a new question untill you've answered correctly
+- If you have guessed correctly 30 times in a row and all score-star spans are being showned displasyQuestion will not show a new question untill you've hiden more of the spans
 
 ### Fixed Bugs
 
-- Post method on the form not working Issue:https://github.com/PetterJohanssonTilia/Project-1-/issues/1
-- CSS validator error - https://github.com/PetterJohanssonTilia/Project-1-/issues/2
-- Wrong sizing of objects through different screens
-- Wrong sizing of text through different screens
+- [UnhideScorestar](https://github.com/PetterJohanssonTilia/project-2/issues/3)
+  Hiding/showing random spans instead of the already hidden/shown ones
+- [Evenlistener not working](https://github.com/PetterJohanssonTilia/project-2/issues/4) Couldn't add eventlistener dynamically so instead created a new class to listen to at the start of the game
 
 ---
 
@@ -409,7 +397,7 @@ You'll easily find the links the Angry neighbors social media in the footer on e
 
 ### Local Instructions
 
-1. Download a copy of the project repository [here](https://github.com/PetterJohanssonTilia/Project-1-/archive/refs/heads/main.zip) and extract the zip file
+1. Download a copy of the project repository [here](https://github.com/PetterJohanssonTilia/Project-2/archive/refs/heads/main.zip) and extract the zip file
 2. Open the index.html file in your browser, This file can be dragged and droped into your browser to open it.
 3. Enjoy the site!
 
@@ -438,11 +426,7 @@ You'll easily find the links the Angry neighbors social media in the footer on e
 
 ### Content
 
-Nearly all text content was generated by the AI, GPT-2, at [Talk to Transformer](https://talktotransformer.com/).
-\*\*(So there will be plenty of grammar or spelling errors or even a bit of nonsense, but I thought it would be a fun addition to the project)88
-Any code utilised from a site is documented and credited within the code.
-All photographs, authors, license rights, copyright, etc. used in this project can be found [here](https://unsplash.com/collections/8825126/used-in-horizon-photo). No credit is required from Unsplash,  
-All other media used is my own.
+All the image content was from pixabay.com and all the objects and their weights was generated by chatgpt
 
 ### Contact
 
