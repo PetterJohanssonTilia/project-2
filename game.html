@@ -11,23 +11,34 @@
     <div id="multiplier1" class="multiplier-box"></div>
     <div id="multiplier2" class="multiplier-box"></div>
     <main>
+      <!-- This section contains the game-->
       <section id="game-section">
+        <!-- This container is a table-->
         <div class="game-container">
+          <!-- Title -->
           <div class="WhatWeighsMore"><h1>What Weighs More?</h1></div>
+          <!-- Guess box 1/2 is where the multiplier, object name and images are positioned-->
           <div id="operand1" class="guess-box1">Operand1</div>
           <div id="operand2" class="guess-box2">Operand2</div>
+          <!-- Score box under the items that moves when player makes a guess-->
           <div id="score-section" class="score-box">0</div>
+          <!-- Attempt box under the score box -->
           <div class="attempts-box">
             <p>Attempts</p>
             <span id="attempts-section">0</span>
           </div>
+          <!-- These divs contains the actual object image-->
           <div id="object-image1" class="object-image1">Object 1 Image</div>
           <div id="object-image2" class="object-image2">Object 2 Image</div>
         </div>
       </section>
+      <!-- The score stars are all .hidden untill Javascript turns them into .shown-->
+      <!-- duration variable is used for each span to make it's animation duration unique -->
+      <!-- big container to cover the entire screen-->
       <div id="score-star-container">
+        <!-- This div uses flex to place the spans-->
         <div class="score-star" id="score-star">
-          <!-- duration variable is used for each span to make it's animation duration unique -->
+          <!-- Individual spans that float up-->
           <span class="hidden bubble" style="--duration: 11"
             ><img src="assets/images/bubble.png" alt="Bubble"
           /></span>
@@ -120,8 +131,10 @@
           /></span>
         </div>
       </div>
+      <!-- Footer getting pushed down to the bottom by Main-->
       <footer>This game was made by PJ</footer>
     </main>
     <script src="assets/js/script.js"></script>
+    <!-- links to the Javascript-->
   </body>
 </html>
