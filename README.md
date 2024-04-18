@@ -300,6 +300,17 @@ Website speed optimisation has been checked with [PageSpeed Insights](https://pa
 |                    | <img src="assets/readme/validator/pagespeedindex.jpg" alt="page speed insight"> | <img src="assets/readme/validator/pagespeedgame.jpg" alt="page speed insight"> |
 | Performance issues |                                      none                                       |                                                                           none |
 
+Javascript has been checked with [JShint](https://jshint.com/).
+
+<img src="assets/readme/validator/jshint.jpg" alt="Jshint">
+
+|          |                        |     |
+| -------- | :--------------------: | --: |
+| Warnings | Const and Let warnings |     |
+| Errors   |          None          |     |
+
+When using JSHint to check my JavaScript code, it doesn't recognize the const/let keywords, which is part of ES6 (ECMAScript 2015). This is because JSHint needs to be configured to understand ES6 syntax. Without this configuration, it may flag the use of const as an error, even though it's a valid feature in modern JavaScript.
+
 CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 <img src="assets/readme/validator/wc3cssvalidator.png" alt="wc3 css validator">
 <img src="assets/readme/validator/cssvalidation.jpg" alt="wc3 css validator results">
