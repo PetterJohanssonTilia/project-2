@@ -276,9 +276,12 @@ HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 
 <img src="assets/readme/validator/wc3validator.png" alt="wc3 validator">
 
-|        | index.html | game.html |
-| ------ | :--------: | --------: |
-| Errors |    None    |      None |
+|        |                                index.html                                |                                                               game.html |
+| ------ | :----------------------------------------------------------------------: | ----------------------------------------------------------------------: |
+|        | <img src="assets/readme/validator/html5index.jpg" alt="html5 validator"> | <img src="assets/readme/validator/html5game.jpg" alt="html5 validator"> |
+| Alerts |                              Trailing slash                              |                                                          Trailing slash |
+
+"Trailing slash on void elements has no effect and interacts badly with unquoted attribute values." This is from the prettier extension to make the code more readable but it has no effect on the code
 
 HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.org/).
 <img src="assets/readme/validator/wavevalidator.png" alt="wave validator">
@@ -286,7 +289,6 @@ HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.o
 |        |                                 index.html                                  |                                                                  game.html |
 | ------ | :-------------------------------------------------------------------------: | -------------------------------------------------------------------------: |
 |        | <img src="assets/readme/validator/webaimindex.jpg" alt="webaim validation"> | <img src="assets/readme/validator/webaimgame.jpg" alt="webaim validation"> |
-| Errors |                                    None                                     |                                                                       None |
 | Alerts |                                    None                                     |                                      A paragraph is used instead of header |
 
 Website speed optimisation has been checked with [PageSpeed Insights](https://pagespeed.web.dev/).
@@ -336,19 +338,11 @@ All links and anchors are working.
 
 ### Testing User Stories
 
-1. As a user interested in relaxing games I'd like to be able to play without feeling any stress
-
-The game features no attempts limit or time limit. This makes the game more
-suited for casual play
-
-2. As a user I'd to see many different objects
-
-The game contains 4 categories and 5 objects in each category. Adding more objects to the game has been made easy by using arrays
-
-3. I'd Like to get a challenge and really test my guessing abilites
-
-With the random multiplier being added to the lowest weight target it makes
-for a much more complex guessing game
+|     |                                           User story                                            |                                                                                                              Answer to user story |
+| --- | :---------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------: |
+| 1   | "As a user interested in relaxing games I'd like to be able to play without feeling any stress" |                                The game features no attempts limit or time limit. This makes the game more suited for casual play |
+| 2   |                          "As a user I'd to see many different objects"                          | The game contains 4 categories and 5 objects in each category. Adding more objects to the game has been made easy by using arrays |
+| 3   |               "I'd Like to get a challenge and really test my guessing abilites"                |                 With the random multiplier being added to the lowest weight target it makes for a much more complex guessing game |
 
 ## Bugs
 
@@ -359,6 +353,7 @@ for a much more complex guessing game
 
 ### Fixed Bugs
 
+- [Readme](https://github.com/PetterJohanssonTilia/project-2/commit/53aaa8ea9d0471906e0294f3e4e879772752509c) Readme couldn't display images when they were named with uppercase .JPG and.PNG
 - [UnhideScorestar](https://github.com/PetterJohanssonTilia/project-2/issues/3)
   Hiding/showing random spans instead of the already hidden/shown ones
 - [Evenlistener not working](https://github.com/PetterJohanssonTilia/project-2/issues/4) Couldn't add eventlistener dynamically so instead created a new class to listen to at the start of the game

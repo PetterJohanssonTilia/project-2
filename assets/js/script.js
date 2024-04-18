@@ -88,6 +88,7 @@ function displayQuestion(){
         object2 = randomObject();  //Gets random object2
     } while (object2 === object1); //Makes sure it's not the same as object1
     lowestWeightObject = lowestWeight(object1, object2); // Finds the lowest weight object
+    let multiplier;
     multiplier = Multiplier(lowestWeightObject.size); // Finds the multiplier of the lowestweightobject, multiplier depends on its size
     if (object1 === lowestWeightObject) { 
         multiplier1.textContent = multiplier; //Storess the multiplier with the lowest weight object
