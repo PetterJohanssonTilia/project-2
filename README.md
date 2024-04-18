@@ -357,6 +357,7 @@ All links and anchors are working.
 - [UnhideScorestar](https://github.com/PetterJohanssonTilia/project-2/issues/3)
   Hiding/showing random spans instead of the already hidden/shown ones
 - [Evenlistener not working](https://github.com/PetterJohanssonTilia/project-2/issues/4) Couldn't add eventlistener dynamically so instead created a new class to listen to at the start of the game
+- [Multiplier Value](https://github.com/PetterJohanssonTilia/project-2/commit/85259db2acb84c6aca227400fb41c601f4dd4a47) not defined before being used
 
 ---
 

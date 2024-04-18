@@ -82,8 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function displayQuestion(){
     let plural1 = ""; //variable to display "s" at the end of object name
     let plural2 = "";
-    object1 = randomObject(); //Gets random object1
-    object2; 
+    object1 = randomObject(); //Gets random object1 
     do {
         object2 = randomObject();  //Gets random object2
     } while (object2 === object1); //Makes sure it's not the same as object1
