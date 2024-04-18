@@ -14,12 +14,19 @@
         <br />
         <h2>
           You got to 10 points in
-          <span id="playagainattempts">x</span> attempts!
+          <span id="playagainattempts">x</span>
+          attempts!
         </h2>
         <br /><br />
         <a href="game.html"><div class="play-box">Play again</div></a>
       </section>
     </main>
     <footer>This game was made by PJ</footer>
+    <script>
+      // Retrieve the value Attempt from session storage
+      const Attempt = sessionStorage.getItem("attempt");
+      // Update the playagainattempts span
+      document.getElementById("playagainattempts").innerText = Attempt;
+    </script>
   </body>
 </html>
