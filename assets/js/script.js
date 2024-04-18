@@ -212,11 +212,10 @@ function incrementScore(){
     let oldScore = parseInt(document.getElementById("score-section").innerText);
     document.getElementById("score-section").innerText = ++oldScore;
     if (oldScore >= 10){
-        let Attempt = parseInt(document.getElementById("attempts-section").innerText); //This will be briefly visable untill the playagain page is loaded
+        let Attempt = parseInt(document.getElementById("attempts-section").innerText); //Creates the attempt value from "attempts-section"
         sessionStorage.setItem('attempt', Attempt); // Store the Attempt value to be reached from the playagain page
         window.location.href = "playagain.html"; //This line takes you to a new page but is to be updated into a pop-up on the same page
-        //alert("Congratulations! You win with only " + (Attempt + 1) + " attempts.");
-        // These 2 lines below dont get executed but will be once the "Play again page" gets turned into a pop-up instead of a separete page
+        // These 2 lines are briefly shown before the playagain page is loaded
         document.getElementById("attempts-section").innerText = "-1"; // Resets the attempts, -1 to make it start at 0 after this function
         document.getElementById("score-section").innerText = "0"; // Resets the score
     } else{
