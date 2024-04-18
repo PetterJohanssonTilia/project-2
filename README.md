@@ -155,17 +155,13 @@ Game
 
 ### Fonts
 
-<div align="center">
-  <img src="./assets/readme/images/fonts1.JPG" alt="Fonts">
-</div>
-
 - The primary font, <a href="https://fonts.google.com/specimen/Barlow+Condensed?query=barlow+con">[Barlow Condensed]</a> Is used in the games boxes and is used because it's calm and simple
 - The secondary font, which is actually used for the header is <a href="https://fonts.google.com/specimen/Imbue?query=imbue">Imbue</a> it looks elegant and fit very nicely with the dark background. It was chosen to contrast the other fonts making the player only read it once and then easily sort it out from the other text used in the game.
 
 ### Colors
 
 <div align="center">
-  <img src="./assets/readme/images/colorpalette.png" alt="Color Pallette">
+  <img src="./assets/readme/colorhunt.jpg" alt="Color Pallette">
 </div>
 
 - Colors found on <a href="https://colorhunt.co/palette/0a1d56492e8737b5b6f2f597">ColorHunt</a>
@@ -177,7 +173,7 @@ Game
 ### Images
 
 <div align="center">
-  <img src="./assets/readme/images/gallery.png" alt="Gallery Images">
+  <img src="./assets/readme/guessbox.jpg" alt="Object images">
 </div>
 
 - All the objects images are found on <a href="https://pixabay.com/">pixabay</a>
@@ -197,19 +193,19 @@ Game
 
 ### Header
 
-<img src="./assets/readme/header.JPG" alt="header">
+<img src="./assets/readme/header.jpg" alt="header">
 
 At the top of all pages to display the name of the game.
 
 ### Guess-boxes
 
-<img src="./assets/readme/guessbox.JPG" alt="guessbox">
+<img src="./assets/readme/guessbox.jpg" alt="guessbox">
 
 These are displayed front and center with clear borders to clearly show the objects for the game.
 
 ### Score-box
 
-<img src="./assets/readme/score.JPG" alt="score">
+<img src="./assets/readme/score.jpg" alt="score">
 
 The score box is displayed under the guess-boxes.
 and is animated to both jump and change color depending
@@ -217,40 +213,23 @@ if you answer correct or false.
 
 ### Attempts-box
 
-<img src="./assets/readme/attempts.JPG" alt="score">
+<img src="./assets/readme/attempts.jpg" alt="score">
 
 The attempts-box is located under scorebox and displays the number of attempts you've made, each attempt is a click and this box is not animated to not bring out too many visuals.
 
 ### Play-button
 
-<img src="./assets/readme/play.JPG" alt="play">
+<img src="./assets/readme/play.jpg" alt="play">
 The play button is located on the front page and displayed clearly.
 It has a wider gap between itself and the text than the header and the text to seperate them more clearly.
 
 #### Footer
 
-<img src="./assets/readme/footer.JPG" alt="Footer">
+<img src="./assets/readme/footer.jpg" alt="Footer">
 
 - Located at the bottom of every page
 - Displays the author of the project
 - Changing shape for larger or smaller devices.
-
-### Index Page
-
-<img src="assets/readme/images/splashimage.PNG" alt="Splash image">
-
-- Picture taken from pixabay <a href="https://pixabay.com/">Pixabay</a>.
-- Used as a splash image that highlights a cartoonish neighborhood at night.
-  The cartoonish style helps convey that this sites articles are satirical
-- An image with a mountain in the middle that stays in the center of the screen on all devices.
-
-### Submit stories and photos
-
-<img src="assets/readme/images/sendphoto.PNG" alt="Splash image">
-<img src="assets/readme/images/submitstory.PNG" alt="Splash image">
-
-- Engage the users and make the community more alive by encouraging user submited content
-- Displayed front and center on the page the user is interested in
 
 ---
 
@@ -295,14 +274,14 @@ It has a wider gap between itself and the text than the header and the text to s
 
 HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 
-<img src="assets/readme/validator/wc3validator.PNG" alt="wc3 validator">
+<img src="assets/readme/validator/wc3validator.png" alt="wc3 validator">
 
 |        | index.html | game.html |
 | ------ | :--------: | --------: |
 | Errors |    None    |      None |
 
 HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.org/).
-<img src="assets/readme/validator/wavevalidator.PNG" alt="wave validator">
+<img src="assets/readme/validator/wavevalidator.png" alt="wave validator">
 
 |        |                                 index.html                                  |                                                                  game.html |
 | ------ | :-------------------------------------------------------------------------: | -------------------------------------------------------------------------: |
@@ -312,7 +291,7 @@ HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.o
 
 Website speed optimisation has been checked with [PageSpeed Insights](https://pagespeed.web.dev/).
 
-<img src="assets/readme/validator/pagespeedinsights.PNG" alt="page speed insight">
+<img src="assets/readme/validator/pagespeedinsights.png" alt="page speed insight">
 
 |                    |                                   index.html                                    |                                                                      game.html |
 | ------------------ | :-----------------------------------------------------------------------------: | -----------------------------------------------------------------------------: |
@@ -320,15 +299,15 @@ Website speed optimisation has been checked with [PageSpeed Insights](https://pa
 | Performance issues |                                      none                                       |                                                                           none |
 
 CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-<img src="assets/readme/validator/wc3cssvalidator.PNG" alt="wc3 css validator">
+<img src="assets/readme/validator/wc3cssvalidator.png" alt="wc3 css validator">
 <img src="assets/readme/validator/cssvalidation.jpg" alt="wc3 css validator results">
 Results are no errors found
 
 and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
-<img src="assets/readme/validator/cssautoprefixer.PNG" alt="autoprefixer css online">
+<img src="assets/readme/validator/cssautoprefixer.png" alt="autoprefixer css online">
 
 Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
-<img src="assets/readme/validator/wc3linkerchecker.PNG" alt="wc3linkchecker">
+<img src="assets/readme/validator/wc3linkerchecker.png" alt="wc3linkchecker">
 
 All links and anchors are working.
 
