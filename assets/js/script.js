@@ -198,23 +198,32 @@ function calculateCorrectAnswer() {
 }
  
 /**
+ * The function IncrementScore and DecrementScore are 2 seperate functions 
+ * because I've added 2 different animations on each, this could be turned into 1 function later
+ * 
+ * 
  * Gets the current score from the DOM and increments it by 1
  * Resets the multiplier
+ * 
+ * 
  * Uses 2 functions to first animate the score green and then unhides a scorestar
  */
 function incrementScore(){
     let oldScore = parseInt(document.getElementById("score-section").innerText);
     document.getElementById("score-section").innerText = ++oldScore;
     if (oldScore >= 10){
-        let Attempt = parseInt(document.getElementById("attempts-section").innerText);
-        alert("Congratulations! You win with only " + (Attempt + 1) + " attempts.");
+        let Attempt = parseInt(document.getElementById("attempts-section").innerText); //This will be briefly visable untill the playagain page is loaded
+        sessionStorage.setItem('attempt', Attempt); // Store the Attempt value to be reached from the playagain page
+        window.location.href = "playagain.html"; //This line takes you to a new page but is to be updated into a pop-up on the same page
+        //alert("Congratulations! You win with only " + (Attempt + 1) + " attempts.");
+        // These 2 lines below dont get executed but will be once the "Play again page" gets turned into a pop-up instead of a separete page
         document.getElementById("attempts-section").innerText = "-1"; // Resets the attempts, -1 to make it start at 0 after this function
         document.getElementById("score-section").innerText = "0"; // Resets the score
     } else{
     multiplier1.textContent = "";
     multiplier2.textContent = "";
-    scoreboxCorrect();
-    unhideRandomScoreStar();
+    scoreboxCorrect();  // Animates the scorebox green
+    unhideRandomScoreStar(); //Turns the scorestars into .hidden
     }
 }
 
@@ -224,8 +233,12 @@ function incrementAttempts(){
 }
 
 /**
+ * The function IncrementScore and DecrementScore are 2 seperate functions 
+ * because I've added 2 different animations on each, this could be turned into 1 function later
+ * 
  * Gets the current score from the DOM and decrements it by 1
  * Resets the multiplier
+ * 
  * Uses 2 functions to first animate the score red and then hides a scorestar
  */
 function decrementScore(){
