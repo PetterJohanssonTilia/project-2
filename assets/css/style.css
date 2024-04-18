@@ -13,18 +13,21 @@ body {
  flex-direction: column;
 }
 
+/*Includes borders when calculating box size */
 * {
-    box-sizing: border-box;  /*Includes borders when calculating */
+    box-sizing: border-box;  
 }
 
-p {
+/*Used mainly in index and playagain page */
+p {  
     font-family: Imbue;
     color: white;
     font-size: 1.5em;
     text-align: center;
 }
 
-h1{
+/*Displayed at the top of each page */
+h1{ 
     font-family: Imbue;
     color: white;
     font-size: 3rem;
@@ -33,7 +36,8 @@ h1{
     margin-bottom: 0px;
 }
 
-h2{
+/*Displayed as bread text under h1 */
+h2{ 
     font-family: Imbue;
     color: white;
     font-size: 1.5rem;
@@ -42,21 +46,23 @@ h2{
     margin-bottom: 20px;
 }
 
-/* ========= Index ========= */
+/* ========= Index Page ========= */
 
-main {
-    /* Make main element take up any surplus space to push footer down */ 
+/* Make main element take up any surplus space to push footer down */ 
+main { 
     flex: 1 0 auto;
     min-height: 100vh;
 }
 
-.indexContainer{
+/* Container to use flex */ 
+.indexContainer{ 
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.play-box{
+/* This is the play button */
+.play-box{  
     background: rgb(103,103,103);
     background: radial-gradient(circle, rgba(103,103,103,1) 0%, rgba(0,1,56,1) 100%);
     border: 5px solid #F2F597 ;
@@ -87,6 +93,7 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
+/*Grid items */
 .WhatWeighsMore { grid-area: 1 / 3 / 2 / 5; }
 .guess-box1 {grid-area: 2 / 1 / 5 / 4; }
 .guess-box2 { grid-area: 2 / 4 / 5 / 7; }
@@ -143,13 +150,16 @@ main {
     height: 50%;
     font-family: "Barlow Condensed";
 }
+/* Text inside attempts-box*/
 .attempts-box p {
     margin-right: 1em;
 }
-
+/* Animation when player updates their score*/
+/* Makes the score-box jump */
 .score-box-animation {
     animation: score-box 0.5s linear;
 }
+
 @keyframes score-box{
     0%{ transform: translateY(0px) scale(1);}
     40%{ transform: translateY(-30px) scale(1);}
@@ -159,6 +169,8 @@ main {
     100%{ transform: translateY(0px) scale(1);}
 }
 
+/* Animation when player gets correct score*/
+/* Text turns green*/
 .score-box-correct {
     text-shadow: rgb(137, 254, 108) 1px 0 10px;
     color: rgb(85, 255, 80);
@@ -167,6 +179,8 @@ main {
     animation: score-box 0.3s linear;
 }
 
+/* Animation when player gets incorrect score*/
+/* Text turns red*/
 .score-box-incorrect {
     text-shadow: rgb(247, 79, 79) 1px 0 10px;
     color: rgb(255, 71, 71);
@@ -175,6 +189,7 @@ main {
     animation: score-box 0.3s linear;
 }
 
+/* The objects images made sure to fit inside the guess boxes*/
 .object-image1 {
     margin: auto;
     width: 200px;
@@ -182,6 +197,7 @@ main {
     object-fit: cover;
     z-index: 11;
 }
+
 .object-image2 {
     margin: auto;
     width: 200px;
@@ -189,6 +205,8 @@ main {
     object-fit: cover;
     z-index: 11;
     }
+
+/* Footer being pushed down by Main*/
 footer {
     margin-top: 10px;
     text-align: center;
@@ -197,6 +215,8 @@ footer {
     background-color: #0A1D56;
 }
 
+/* Biggest container to hold the stars*/
+/* Takes up the whole screen and hides any overflow*/
 #score-star-container {
     position: absolute;
     top: 0;
@@ -204,8 +224,11 @@ footer {
     height: 100vh;
     overflow: hidden;
     z-index: 1;
-    overflow: hidden;
 }
+
+/* The div that contains the bubble image
+uses flex and wrap to allow you to see many
+scorestars at once */
 .score-star {
     position: relative;
     display: flex;
@@ -213,10 +236,15 @@ footer {
     z-index: 2;
 }
 
+/* the image inside the span
+opacity 50% to give it a bubble effect*/
 .score-star img{
     opacity: 50%;
 }
 
+/* the span that contains the image
+the span uses styles that aren't seen but they're here
+in case we wan't to remove the image and create bubbles with css instead*/
 .score-star span {
     position: relative;
     border-radius: 50%;
@@ -225,9 +253,13 @@ footer {
     0 0 50px #f6f99911,
     0 0 90px #f6f9b111;
     animation: score-star 16s linear infinite;
-    animation-duration: calc(200s / var(--duration)); /* Changes the animation duration depending on the --duration variable*/
+    animation-duration: calc(200s / var(--duration)); /* Changes the animation duration 
+    depending on the --duration variable that are set in the game.html on each span*/
 }
 
+/* Every even span 
+uses styles that aren't seen but they're here
+in case we wan't to remove the image and create bubbles with css instead*/
 .score-star span:nth-child(even){ /* Different color for even spans */
     background-color: #37b6b626;
     box-shadow: 0 0 0 10px #37b6b615,
@@ -235,7 +267,10 @@ footer {
     0 0 90px #9adfdf11;
 }
 
-
+/* This animations transports the spans from the bottom to the top
+ while moving slightly left and right
+ and increasing in size as they reach the top
+ when reaching the top the bubble explodes and resets at the bottom*/
 @keyframes score-star{
     0%{ transform: translateX(0vw) translateY(100vh) scale(0)}
     12.5%{ transform: translateX(2vw) translateY(87.5vh) scale(0.125)}
@@ -258,28 +293,33 @@ footer {
     animation: bubble-pop 0.1s linear !important;
 }
 
+/* This animation turns the bubbles invisible */
 @keyframes bubble-pop {
     0% {
         opacity: 1;
     }
     1% {
-        opacity: 0;
+        opacity: 0; /*Turning invisible right at the start */
     }
     100% {
         opacity: 0;
     }
 }
 
+/* Used to showe the score-stars */
 .shown {
     opacity: 1;
     transition: 0.5s linear;
     z-index: 3;
 }
+
 /* Media query: smaller phones(280px and up) */
+/* Game container takes up all the screen */
+/* 1-2 rem fonts */
+/* Images 80x80 pixels */
 @media screen and (min-width: 280px){
     main {
         width: 100vw;
-
     }
     .game-container {
         width: 100%;
@@ -288,7 +328,6 @@ footer {
     .h1{
         font-size: 2rem;
         padding: 0;
-    }
     }
     .guess-box2, .guess-box1 {
         padding: 10px;
@@ -304,18 +343,20 @@ footer {
     .attempts-box{
         font-size: 1rem;
     }
+}
 
 /* Media query: Large phones and landscape phones(412px and up) */
+/* Game container takes up all the screen */
+/* 1-3 rem fonts */
+/* Images 140x140 pixels */
 @media screen and (min-width: 411px){
     main {
         width: 100vw;
-
     }
-
     .game-container {
         width: 100%;
         height: 100vh;
-        }
+    }
     .h1{
         font-size: 3rem;
         padding: 0;
@@ -343,6 +384,10 @@ footer {
 
 
 /* Media query: Tablets and larger (768px and up) */
+/* Game container takes up all the screen */
+/* 1.8-3 rem fonts */
+/* Images 200x200 pixels */
+/* guess-box height 80% */
 @media screen and (min-width: 768px){ 
 
     .h1{
@@ -373,15 +418,18 @@ footer {
 }
   
 /* Media query: Laptops and larger (992px and up) */
+/* score-box margin change*/
+
 @media screen and (min-width: 992px) {
-    
     .score-box{
         margin-top: -65px;
     }
-
 }
 
 /* Media query: Laptops and larger (1024px and up) */
+/* Game container takes up 90% of the screen width*/
+/* scorebox margin change */
+
 @media screen and (min-width: 1024px) {
     .game-container {
         width: 90%;
@@ -392,6 +440,8 @@ footer {
 }
 
 /* Media query: Laptops and larger (1440px and up) */
+/* Game container takes up 80% of the screen width*/
+/* Moving the header and boxes down */
 @media screen and (min-width: 1440px) {
     .game-container {
         width: 80%;
@@ -411,6 +461,9 @@ footer {
 }
 
 /* Media query: Laptops and larger (2560px and up) */
+/* Game container takes up 60% of the screen width*/
+/* Images now 250x250 pixels */
+/*attempts boxs bigger font*/
 @media screen and (min-width: 2560px) {
     .game-container {
         width: 60%;

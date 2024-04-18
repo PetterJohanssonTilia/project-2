@@ -45,7 +45,6 @@ let object1;
 let object2;
 let lowestWeightObject;
 
-
 /**
  * Run game after DOM is loaded
  * Add Event listeners after DOM is loaded
@@ -72,8 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     displayQuestion();
 });
-
-
 
 /**
  * Displays the question in operand1 and operand2
