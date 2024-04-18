@@ -50,26 +50,30 @@ let lowestWeightObject;
  * Add Event listeners after DOM is loaded
  */
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("operand1").addEventListener("click", function(){
-        checkAnswer('clickedOn1'); //Click on guess-box1
-    });
-    document.getElementById("object-image1").addEventListener("click", function(){
-        checkAnswer('clickedOn1'); //Click on image 1
-    });  
-    document.getElementById("operand2").addEventListener("click", function(){
-        checkAnswer('clickedOn2'); //Click on guess-box2
-    });
-    document.getElementById("object-image2").addEventListener("click", function(){
-        checkAnswer('clickedOn2'); //Click on image 2
-    });
-    bubbles.forEach(ele => {
-        ele.addEventListener("mouseover", function(e) {
-            if (e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('bubble')) {
-                hideThisScoreStar(e.target);
-            }
+    try {
+        document.getElementById("operand1").addEventListener("click", function(){
+            checkAnswer('clickedOn1'); //Click on guess-box1
         });
-    });
-    displayQuestion();
+        document.getElementById("object-image1").addEventListener("click", function(){
+            checkAnswer('clickedOn1'); //Click on image 1
+        });  
+        document.getElementById("operand2").addEventListener("click", function(){
+            checkAnswer('clickedOn2'); //Click on guess-box2
+        });
+        document.getElementById("object-image2").addEventListener("click", function(){
+            checkAnswer('clickedOn2'); //Click on image 2
+        });
+        bubbles.forEach(ele => {
+            ele.addEventListener("mouseover", function(e) {
+                if (e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('bubble')) {
+                    hideThisScoreStar(e.target);
+                }
+            });
+        });
+        displayQuestion();
+    } catch(err) { 
+        console.log("An error occurred in the DOM loader", err.message);
+    }  
 });
 
 /**
