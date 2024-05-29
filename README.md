@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="./assets/readme/images/different-screens.png" alt="Home Page">
-</div>
-
 <h1>What Weighs More?</h1>
 This is a Javascript portfolio-project. <br>
 The website is designed to be a relaxing game of guessing and estimating weight of objects. The website offers a clear and simple game with visuals to keep the player engaged.<br><br>

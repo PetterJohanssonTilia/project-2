@@ -290,10 +290,12 @@ function unhideRandomScoreStar() {
  */
 function hideRandomScoreStar() {
     let spans = document.querySelectorAll(".shown"); // Selects all spans with the shown class
-    let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number of all the shown spans
-    spans[randomIndex].classList.remove("shown"); // Removes the shown class
-    spans[randomIndex].classList.add("hidden"); // Adds the hidden class
-    displayQuestion();
+    if (spans.length > 0) {
+        let randomIndex = Math.floor(Math.random() * spans.length); //Picks random number of all the shown spans
+        spans[randomIndex].classList.remove("shown"); // Removes the shown class
+        spans[randomIndex].classList.add("hidden"); // Adds the hidden class
+    }
+    displayQuestion(); // Display the next question
 }
 
 function hideThisScoreStar(element){
