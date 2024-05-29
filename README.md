@@ -145,9 +145,9 @@ What weighs more fills these needs by:
 
 Wireframes:
 Index
-<img src="./assets/readme/wireframes/wireframeindex.jpg" alt="Wireframes">
+<img src="./assets/readme/wireframes/wireframeindex1.jpg" alt="Wireframes">
 Game
-<img src="./assets/readme/wireframes/wireframegame.jpg" alt="Wireframes">
+<img src="./assets/readme/wireframes/wireframegame1.jpg" alt="Wireframes">
 
 ### Fonts
 
@@ -157,7 +157,7 @@ Game
 ### Colors
 
 <div align="center">
-  <img src="./assets/readme/colorhunt.jpg" alt="Color Pallette">
+  <img src="./assets/readme/colorhunt1.jpg" alt="Color Pallette">
 </div>
 
 - Colors found on <a href="https://colorhunt.co/palette/0a1d56492e8737b5b6f2f597">ColorHunt</a>
@@ -169,7 +169,7 @@ Game
 ### Images
 
 <div align="center">
-  <img src="./assets/readme/guessbox.jpg" alt="Object images">
+  <img src="./assets/readme/guessbox1.jpg" alt="Object images">
 </div>
 
 - All the objects images are found on <a href="https://pixabay.com/">pixabay</a>
@@ -189,19 +189,19 @@ Game
 
 ### Header
 
-<img src="./assets/readme/header.jpg" alt="header">
+<img src="./assets/readme/header1.jpg" alt="header">
 
 At the top of all pages to display the name of the game.
 
 ### Guess-boxes
 
-<img src="./assets/readme/guessbox.jpg" alt="guessbox">
+<img src="./assets/readme/guessbox1.jpg" alt="guessbox">
 
 These are displayed front and center with clear borders to clearly show the objects for the game.
 
 ### Score-box
 
-<img src="./assets/readme/score.jpg" alt="score">
+<img src="./assets/readme/score1.jpg" alt="score">
 
 The score box is displayed under the guess-boxes.
 and is animated to both jump and change color depending
@@ -209,19 +209,19 @@ if you answer correct or false.
 
 ### Attempts-box
 
-<img src="./assets/readme/attempts.jpg" alt="score">
+<img src="./assets/readme/attempts1.jpg" alt="score">
 
 The attempts-box is located under scorebox and displays the number of attempts you've made, each attempt is a click and this box is not animated to not bring out too many visuals.
 
 ### Play-button
 
-<img src="./assets/readme/play.jpg" alt="play">
+<img src="./assets/readme/play1.jpg" alt="play">
 The play button is located on the front page and displayed clearly.
 It has a wider gap between itself and the text than the header and the text to seperate them more clearly.
 
 #### Footer
 
-<img src="./assets/readme/footer.jpg" alt="Footer">
+<img src="./assets/readme/footer1.jpg" alt="Footer">
 
 - Located at the bottom of every page
 - Displays the author of the project
@@ -272,33 +272,33 @@ HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 
 <img src="assets/readme/validator/wc3validator.png" alt="wc3 validator">
 
-|        |                                index.html                                |                                                               game.html |
-| ------ | :----------------------------------------------------------------------: | ----------------------------------------------------------------------: |
-|        | <img src="assets/readme/validator/html5index.jpg" alt="html5 validator"> | <img src="assets/readme/validator/html5game.jpg" alt="html5 validator"> |
-| Alerts |                              Trailing slash                              |                                                          Trailing slash |
+|        |                                index.html                                 |                                                                game.html |
+| ------ | :-----------------------------------------------------------------------: | -----------------------------------------------------------------------: |
+|        | <img src="assets/readme/validator/html5index1.jpg" alt="html5 validator"> | <img src="assets/readme/validator/html5game1.jpg" alt="html5 validator"> |
+| Alerts |                              Trailing slash                               |                                                           Trailing slash |
 
 "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values." This is from the prettier extension to make the code more readable but it has no effect on the code
 
 HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.org/).
 <img src="assets/readme/validator/wavevalidator.png" alt="wave validator">
 
-|        |                                 index.html                                  |                                                                  game.html |
-| ------ | :-------------------------------------------------------------------------: | -------------------------------------------------------------------------: |
-|        | <img src="assets/readme/validator/webaimindex.jpg" alt="webaim validation"> | <img src="assets/readme/validator/webaimgame.jpg" alt="webaim validation"> |
-| Alerts |                                    None                                     |                                      A paragraph is used instead of header |
+|        |                                  index.html                                  |                                                                   game.html |
+| ------ | :--------------------------------------------------------------------------: | --------------------------------------------------------------------------: |
+|        | <img src="assets/readme/validator/webaimindex1.jpg" alt="webaim validation"> | <img src="assets/readme/validator/webaimgame1.jpg" alt="webaim validation"> |
+| Alerts |                                     None                                     |                                       A paragraph is used instead of header |
 
 Website speed optimisation has been checked with [PageSpeed Insights](https://pagespeed.web.dev/).
 
 <img src="assets/readme/validator/pagespeedinsights.png" alt="page speed insight">
 
-|                    |                                   index.html                                    |                                                                      game.html |
-| ------------------ | :-----------------------------------------------------------------------------: | -----------------------------------------------------------------------------: |
-|                    | <img src="assets/readme/validator/pagespeedindex.jpg" alt="page speed insight"> | <img src="assets/readme/validator/pagespeedgame.jpg" alt="page speed insight"> |
-| Performance issues |                                      none                                       |                                                                           none |
+|                    |                                    index.html                                    |                                                                       game.html |
+| ------------------ | :------------------------------------------------------------------------------: | ------------------------------------------------------------------------------: |
+|                    | <img src="assets/readme/validator/pagespeedindex1.jpg" alt="page speed insight"> | <img src="assets/readme/validator/pagespeedgame1.jpg" alt="page speed insight"> |
+| Performance issues |                                       none                                       |                                                                            none |
 
 Javascript has been checked with [JShint](https://jshint.com/).
 
-<img src="assets/readme/validator/jshint.jpg" alt="Jshint">
+<img src="assets/readme/validator/jshint1.jpg" alt="Jshint">
 
 |          |                        |     |
 | -------- | :--------------------: | --: |
@@ -308,8 +308,8 @@ Javascript has been checked with [JShint](https://jshint.com/).
 When using JSHint to check my JavaScript code, it doesn't recognize the const/let keywords, which is part of ES6 (ECMAScript 2015). This is because JSHint needs to be configured to understand ES6 syntax. Without this configuration, it may flag the use of const as an error, even though it's a valid feature in modern JavaScript.
 
 CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-<img src="assets/readme/validator/wc3cssvalidator.png" alt="wc3 css validator">
-<img src="assets/readme/validator/cssvalidation.jpg" alt="wc3 css validator results">
+<img src="assets/readme/validator/wc3cssvalidator1.png" alt="wc3 css validator">
+<img src="assets/readme/validator/cssvalidation1.jpg" alt="wc3 css validator results">
 Results are no errors found
 
 and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
