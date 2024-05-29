@@ -143,10 +143,11 @@ What weighs more fills these needs by:
 
 ### Wireframes
 
-Wireframes:
-Index
+Index</br>
+
 <img src="./assets/readme/wireframes/wireframeindex1.jpg" alt="Wireframes">
-Game
+Game</br>
+
 <img src="./assets/readme/wireframes/wireframegame1.jpg" alt="Wireframes">
 
 ### Fonts
@@ -236,7 +237,8 @@ It has a wider gap between itself and the text than the header and the text to s
 - [HTML]
   - Page markup.
 - [CSS]
-  - Styling and animations -[Java-script]
+  - Styling and animations
+- [Java-script]
   - Interactivity
 
 ## Libraries
@@ -270,7 +272,7 @@ It has a wider gap between itself and the text than the header and the text to s
 
 HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 
-<img src="assets/readme/validator/wc3validator.png" alt="wc3 validator">
+<img src="assets/readme/validator/wc3validator1.png" alt="wc3 validator">
 
 |        |                                index.html                                 |                                                                game.html |
 | ------ | :-----------------------------------------------------------------------: | -----------------------------------------------------------------------: |
@@ -280,7 +282,7 @@ HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/).
 "Trailing slash on void elements has no effect and interacts badly with unquoted attribute values." This is from the prettier extension to make the code more readable but it has no effect on the code
 
 HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.org/).
-<img src="assets/readme/validator/wavevalidator.png" alt="wave validator">
+<img src="assets/readme/validator/wavevalidator1.png" alt="wave validator">
 
 |        |                                  index.html                                  |                                                                   game.html |
 | ------ | :--------------------------------------------------------------------------: | --------------------------------------------------------------------------: |
@@ -289,7 +291,7 @@ HTML has been validated with [Wave.webaim HTML5 Validator](https://wave.webaim.o
 
 Website speed optimisation has been checked with [PageSpeed Insights](https://pagespeed.web.dev/).
 
-<img src="assets/readme/validator/pagespeedinsights.png" alt="page speed insight">
+<img src="assets/readme/validator/pagespeedinsights1.png" alt="page speed insight">
 
 |                    |                                    index.html                                    |                                                                       game.html |
 | ------------------ | :------------------------------------------------------------------------------: | ------------------------------------------------------------------------------: |
@@ -313,10 +315,10 @@ CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-valida
 Results are no errors found
 
 and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/).
-<img src="assets/readme/validator/cssautoprefixer.png" alt="autoprefixer css online">
+<img src="assets/readme/validator/cssautoprefixer1.png" alt="autoprefixer css online">
 
 Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
-<img src="assets/readme/validator/wc3linkerchecker.png" alt="wc3linkchecker">
+<img src="assets/readme/validator/wc3linkerchecker1.png" alt="wc3linkchecker">
 
 All links and anchors are working.
 
