@@ -8,50 +8,39 @@ The design is cartoonish and simple to allow for the animations in the backgroun
 
 1.  <details open>
       <summary><a href="#ux">UX</a></summary>
-      <ul>
-      <li><details>
-      <summary><a href="#goals">Goals</a></summary>
+      
+      <details><summary><a href="#goals">Goals</a></summary>
 
     - [Visitor Goals](#visitor-goals)
     - [Business Goals](#business-goals)
     - [User Stories](#user-stories)
+        </details>
+
+        <details><summary><a href="#visual-design">Visual Design</a></summary>
+
+      - [Wireframes](#wireframes)
+      - [Fonts](#fonts)
+      - [Icons](#icons)
+      - [Colors](#colors)
+      - [Images](#images)
+      - [Styling](#styling)
+
       </details>
-      </li>
-
-        <li><details>
-        <summary><a href="#visual-design">Visual Design<a><summary>
-
-    - [Wireframes](#wireframes)
-    - [Fonts](#fonts)
-    - [Icons](#icons)
-    - [Colors](#colors)
-    - [Images](#images)
-    - [Styling](#styling)
-    </details></li></ul>
 
     </details>
 
 2.  <details open>
       <summary><a href="#features">Features</a></summary>
-      <ul>
-      <li><details>
+      
+      <details>
       <summary><a href="#page-elements">Page Elements</a></summary>
 
     - [All Pages](#all-pages)
     - [Index Page](#index-page)
     - [Game Page](#gallery-page)
-        </details></li>
-          <li><details>
-          <summary><a href="#additional-features">Additional Features</a></summary>
-
-        </details></li>
-          <li><details>
-          <summary><a href="#feature-ideas">Feature Ideas</a></summary>
-          - [Basic](#basic)
-          - [Content](#content)
-          </details></li>
-          </ul>
       </details>
+      <summary><a href="#feature-ideas">Feature Ideas</a></summary>
+    </details>
 
 3.  <details open>
       <summary><a href="#technologies-used">Technologies Used</a></summary>
@@ -68,6 +57,7 @@ The design is cartoonish and simple to allow for the animations in the backgroun
       <ul>
       <li><details>
       <summary><a href="#methods">Methods</a></summary>
+      
       - [Validation](#validation)
       - [General Testing](#general-testing)
       - [Mobile Testing](#mobile-testing)
@@ -75,6 +65,7 @@ The design is cartoonish and simple to allow for the animations in the backgroun
       </details></li>
       <li><details>
       <summary><a href="#bugs">Bugs</a></summary>
+
     - [Known Bugs](#known-bugs)
     - [Fixed Bugs](#fixed-bugs)
     </details></li>
@@ -99,6 +90,7 @@ The design is cartoonish and simple to allow for the animations in the backgroun
 
 6.  <details open>
       <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
+      
       - [Content](#content)
       - [Contact](#contact)
     </details>
