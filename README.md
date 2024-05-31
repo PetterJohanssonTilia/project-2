@@ -77,11 +77,13 @@ The design is cartoonish and simple to allow for the animations in the backgroun
       <ul>
       <li><details>
       <summary><a href="#local-deployment">Local Deployment</a></summary>
+      
       - [Local Preparation](#local-preparation)
       - [Local Instructions](#local-instructions)
       </details></li>
       <li><details>
       <summary><a href="#github-deployment">Github Deployment</a></summary>
+      
       - [Github Preparation](#github-preparation)
       - [Github Instructions](#github-instructions)
       </details></li>
