@@ -40,7 +40,7 @@ The design is cartoonish and simple to allow for the animations in the backgroun
     - [Game Page](#gallery-page)
       </details>
       <summary><a href="#feature-ideas">Feature Ideas</a></summary>
-    </details>
+      </details>
 
 3.  <details open>
       <summary><a href="#technologies-used">Technologies Used</a></summary>
