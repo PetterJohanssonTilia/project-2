@@ -357,11 +357,12 @@ All links and anchors are working.
 
 ### Known Bugs
 
-- If you're at minus 1 score and you have no score-star spans active the displayQuestion function will not display a new question untill you've answered correctly
 - If you have guessed correctly 30 times in a row and all score-star spans are being showned displasyQuestion will not show a new question untill you've hiden more of the spans
 
 ### Fixed Bugs
 
+- [negative-score-bug](https://github.com/PetterJohanssonTilia/project-2/issues/7)
+  When answering incorrect with an already negative score the game would not show a new question and display errors in console
 - [Readme](https://github.com/PetterJohanssonTilia/project-2/commit/53aaa8ea9d0471906e0294f3e4e879772752509c) Readme couldn't display images when they were named with uppercase .JPG and.PNG
 - [UnhideScorestar](https://github.com/PetterJohanssonTilia/project-2/issues/3)
   Hiding/showing random spans instead of the already hidden/shown ones
