@@ -40,19 +40,18 @@ The design is cartoonish and simple to allow for the animations in the backgroun
     - [All Pages](#all-pages)
     - [Index Page](#index-page)
     - [Game Page](#gallery-page)
-      </details></li>
-        <li><details>
-        <summary><a href="#additional-features">Additional Features</a></summary>
-
-    - [Email](#email)
-      </details></li>
-        <li><details>
-        <summary><a href="#feature-ideas">Feature Ideas</a></summary>
-        - [Basic](#basic)
-        - [Content](#content)
         </details></li>
-        </ul>
-    </details>
+          <li><details>
+          <summary><a href="#additional-features">Additional Features</a></summary>
+
+        </details></li>
+          <li><details>
+          <summary><a href="#feature-ideas">Feature Ideas</a></summary>
+          - [Basic](#basic)
+          - [Content](#content)
+          </details></li>
+          </ul>
+      </details>
 
 3.  <details open>
       <summary><a href="#technologies-used">Technologies Used</a></summary>
@@ -229,6 +228,13 @@ It has a wider gap between itself and the text than the header and the text to s
 - Changing shape for larger or smaller devices.
 
 ---
+
+# Feature-Ideas
+
+### Player feedback
+
+The Idea of the attempts-box, score-box and the bubbles in the background is to give the
+player feedback when playing. When you guess a bubble either appears or dissapears, the attempts-box changes its score and the score-box is animated to bounce and change color to grab the users attention and indicate a right or wrong guess.
 
 # Technologies Used
 
